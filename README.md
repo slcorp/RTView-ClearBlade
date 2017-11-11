@@ -1,4 +1,4 @@
-**_WORK UNDER PROGRESS_**
+**_WORK IN PROGRESS_**
 
 # RTView ClearBlade Demo
 
