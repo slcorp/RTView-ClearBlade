@@ -5,7 +5,7 @@
 ## Goals
 RTView-ClearBlade demo will: 
 * Show how easy it is to display ClearBlade topics in graphical and highly configurable displays in the Cloud.
-* Convey the structure of the node script which subscribes to topics of interest, needed to send data to RTView.
+* Convey the structure of the node script, needed to send data to RTView, which subscribes to topics of interest.
 * Allow the users to enhance the existing RTView displays or create new ones.
 
 
