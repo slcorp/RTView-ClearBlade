@@ -1,0 +1,327 @@
+{
+    "modifiedDate": "2017-11-08T01:36:58.173Z",
+    "viewport": {
+        "x": -84,
+        "y": -31,
+        "scale": 1
+    },
+    "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 600,
+        "resizable": false
+    },
+    "preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAABZUlEQVR4Xu3TQREAAAiEQK9/aWvsAxMw4O06ysAommCuINgTFKQgmAEMp4UUBDOA4bSQgmAGMJwWUhDMAIbTQgqCGcBwWkhBMAMYTgspCGYAw2khBcEMYDgtpCCYAQynhRQEM4DhtJCCYAYwnBZSEMwAhtNCCoIZwHBaSEEwAxhOCykIZgDDaSEFwQxgOC2kIJgBDKeFFAQzgOG0kIJgBjCcFlIQzACG00IKghnAcFpIQTADGE4LKQhmAMNpIQXBDGA4LaQgmAEMp4UUBDOA4bSQgmAGMJwWUhDMAIbTQgqCGcBwWkhBMAMYTgspCGYAw2khBcEMYDgtpCCYAQynhRQEM4DhtJCCYAYwnBZSEMwAhtNCCoIZwHBaSEEwAxhOCykIZgDDaSEFwQxgOC2kIJgBDKeFFAQzgOG0kIJgBjCcFlIQzACG00IKghnAcFpIQTADGE4LKQhmAMNpIQXBDGA4LQQL8oTPAGUY76lBAAAAAElFTkSuQmCC",
+    "localVars": {},
+    "styleSheet": {},
+    "linksRoute": "Angled",
+    "layout": "",
+    "version": "1.25.0",
+    "nodeDataArray": [
+        {
+            "key": -2,
+            "category": "extern-custom-table",
+            "bgVisible": true,
+            "size": "370 140",
+            "rowSeriesFlag": true,
+            "pos": "200 520",
+            "dispName": "cachegrid",
+            "bindings": {
+                "component": {
+                    "url": "LOCAL-CLEARBLADE",
+                    "cache": "ClearBladeCache",
+                    "table": "history",
+                    "value": "time_stamp;metric_name;measurement",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "ExhaustAirTemp"
+                    },
+                    "type": "cache_advanced"
+                }
+            },
+            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png",
+            "columns": {
+                "time_stamp": {
+                    "title": "Time Stamp",
+                    "width": 100
+                },
+                "plant_name": {
+                    "title": "Plant Name"
+                },
+                "plant_id": {
+                    "title": "Plant ID",
+                    "hidden": true
+                },
+                "metric_name": {
+                    "title": "Metric"
+                },
+                "measurement": {
+                    "title": "Measurement",
+                    "format": "0.0",
+                    "width": 60
+                },
+                "unit": {
+                    "title": "Unit"
+                }
+            }
+        },
+        {
+            "key": 1,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "CLEARBLADE  TRENDS",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 16pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "398.4 17.6",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -4,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Exhaust Air Temperature History",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 10pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "145.6 433.6",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -5,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Exhaust Air Temperature",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 10pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "122.4 37.8",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": 12,
+            "category": "extern-trendchart",
+            "bgVisible": true,
+            "size": "740 110",
+            "fillFlag": true,
+            "legendVisFlag": false,
+            "legendPos": "right",
+            "scrollFlag": true,
+            "stripFlag": false,
+            "pos": "400 100",
+            "bindings": {
+                "component": {
+                    "url": "LOCAL-CLEARBLADE",
+                    "cache": "ClearBladeCache",
+                    "table": "history",
+                    "value": "time_stamp;measurement",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "ExhaustAirTemp"
+                    },
+                    "type": "cache_advanced"
+                }
+            },
+            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png",
+            "labelVisible": false,
+            "labelText": ""
+        },
+        {
+            "key": -6,
+            "category": "extern-custom-table",
+            "bgVisible": true,
+            "size": "370 140",
+            "rowSeriesFlag": true,
+            "pos": "600 520",
+            "dispName": "cachegrid",
+            "bindings": {
+                "component": {
+                    "url": "LOCAL-CLEARBLADE",
+                    "cache": "ClearBladeCache",
+                    "table": "history",
+                    "value": "time_stamp;metric_name;measurement",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "bearing/bearing1/bearingrpm"
+                    },
+                    "type": "cache_advanced"
+                }
+            },
+            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png",
+            "columns": {
+                "time_stamp": {
+                    "title": "Time Stamp",
+                    "width": 100
+                },
+                "plant_name": {
+                    "title": "Plant Name"
+                },
+                "plant_id": {
+                    "title": "Plant ID",
+                    "hidden": true
+                },
+                "metric_name": {
+                    "title": "Metric"
+                },
+                "measurement": {
+                    "title": "Measurement",
+                    "format": "0.0",
+                    "width": 60
+                },
+                "unit": {
+                    "title": "Unit"
+                }
+            }
+        },
+        {
+            "key": -7,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Bearing RPM History",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 10pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "495.5 433.15",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -8,
+            "category": "extern-trendchart",
+            "bgVisible": true,
+            "size": "740 110",
+            "fillFlag": true,
+            "legendVisFlag": false,
+            "legendPos": "right",
+            "scrollFlag": true,
+            "stripFlag": false,
+            "pos": "400 234",
+            "bindings": {
+                "component": {
+                    "url": "LOCAL-CLEARBLADE",
+                    "cache": "ClearBladeCache",
+                    "table": "history",
+                    "value": "time_stamp;measurement;metric_name",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "DryingAggregateTemp"
+                    },
+                    "type": "cache_advanced"
+                }
+            },
+            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png"
+        },
+        {
+            "key": -9,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Drying Air AggregateTemperature",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 10pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "152.4 169.6",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -11,
+            "category": "extern-trendchart",
+            "bgVisible": true,
+            "size": "740 110",
+            "fillFlag": true,
+            "legendVisFlag": false,
+            "legendPos": "right",
+            "scrollFlag": true,
+            "stripFlag": false,
+            "pos": "400 364",
+            "bindings": {
+                "component": {
+                    "url": "LOCAL-CLEARBLADE",
+                    "cache": "ClearBladeCache",
+                    "table": "history",
+                    "value": "time_stamp;measurement;metric_name",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "bearing/bearing1/bearingrpm"
+                    },
+                    "type": "cache_advanced"
+                }
+            },
+            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png"
+        },
+        {
+            "key": 19,
+            "category": "extern-cachectrl2",
+            "bgVisible": true,
+            "size": "266 38",
+            "server": "LOCAL-CLEARBLADE",
+            "cache": "ClearBladeCache",
+            "autoSelect": true,
+            "setGlobals": true,
+            "indexColumns": "plant_id",
+            "bgVis": false,
+            "pos": "690 27",
+            "dispName": "cachectrl2",
+            "serverURL": "http://localhost:3270/rtvquery"
+        },
+        {
+            "key": -10,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Bearing RPM",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 10pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "87.4 300.25",
+            "labelColor": "#497ee7"
+        }
+    ],
+    "linkDataArray": []
+}
