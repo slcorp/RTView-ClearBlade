@@ -99,6 +99,8 @@ Bring up a Command prompt.
 
 	Notice that you are automatically in your own private organization (e.g. JohnSPrivateOrg).
 	
+#### Connecting the displays to your local RTView data server
+
 * On the top menu, click on Data.
 
 	This will take you to the RTData Server List page in which you will create a connection 
@@ -107,14 +109,14 @@ Bring up a Command prompt.
 * Click on the Add Server button.
 
 * For Name, type:
-LOCAL-CLEARBLADE
+LOCAL-DEMO-SERVER
 
 * For Host/URL, type:
 http://localhost:3270/rtvquery
 
 * Click on Save Added Servers.
 
-* To test the connection, click on the green magnifying glass next to the LOCAL-CLEARBLADE.
+* To test the connection, click on the green magnifying glass next to the LOCAL-DEMO-SERVER.
 	This will bring up the RTView DataServer - Cache Tables dialog.
 	You should see "Connected" under Connection Status. 
 	You should also see the ClearBladeCache in the CacheTable.
@@ -141,6 +143,55 @@ http://localhost:3270/rtvquery
 
 	This will load the cb_mixing_plant_chicago_l display into the editor. 
 	This display is configured to connect to your local RTView data server and collect data. This process then populates the display with live data that is being collected by the node script from ClearBlade.
+
+
+#### Connecting the displays to RTView's IoT data server on Amazon Cloud
+
+* On the top menu, click on Data.
+
+	This will take you to the RTData Server List page in which you will create a connection 
+	to your RTView data server.
+	
+* Click on the Add Server button.
+
+* For Name, type:
+IOT-DEMO-SERVER
+
+* For Host/URL, type:
+http://iot-demo-server.slsandbox.com:3270/rtvquery
+
+* Click on Save Added Servers.
+
+* To test the connection, click on the green magnifying glass next to the IOT-DEMO-SERVER.
+	This will bring up the RTView DataServer - Cache Tables dialog.
+	You should see "Connected" under Connection Status. 
+	You should also see the ClearBladeCache in the CacheTable.
+	
+* Close the dialog.
+
+* On the top menu, click on Design.
+
+	This will bring up the RTDraw, which is RTViewCloud’s visual editor.
+	
+* Click on File in the menu.
+
+* Click on Open ….
+
+* Double click on cb_mixing_plant_chicago_l.
+
+	This will load the cb_mixing_plant_chicago_l display into the editor. 
+	
+* Click on Options in the menu.
+
+* Click on Variables ….
+
+	This will bring up the VARIABLES dialog.
+	
+* Change the LOCAL-DEMO-SERVER to IOT-DEMO-SERVER for gDemoServerURL.
+
+* Click OK.
+
+	This will connect your display to SL RTView's IoT data server that is running on an Amazon instance. 
 
 
 **_Feel free to experiment with this project, modify it, enhance it and share your experience, comments, suggestions and/or enhancements with us._**
