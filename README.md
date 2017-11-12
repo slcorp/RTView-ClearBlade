@@ -29,8 +29,8 @@ or
 * Mozilla Firefox 50.x+
 
 * RTViewDataServer-Mini package (a zip file, which will be available through SL Corporation)
-* RTView_ClearBlade_Displays package (a directory, which is available through GitHub)
-* RTView_ClearBlade_Node package (a directory, which is available through GitHub)
+* RTView-ClearBlade-Displays package (a directory, which is available through GitHub)
+* RTView-ClearBlade-Node package (a directory, which is available through GitHub)
 
 * A free trial subscription to RTViewCloud services
 
@@ -66,18 +66,18 @@ Bring up a Command prompt.
 *cd ..*
 
 
-### Installation of the RTView_ClearBlade_Displays package
+### Installation of the RTView-ClearBlade-Displays package
 
 * Make sure you are in rtvdemos directory.
-* Extract the RTView_ClearBlade_Displays directory out of the RTView-ClearBlade-master.zip into rtvdemos.
+* Extract the RTView-ClearBlade-Displays directory out of the RTView-ClearBlade-master.zip into rtvdemos.
 
 
-### Installation and execution of the RTView_ClearBlade_Node package
+### Installation and execution of the RTView-ClearBlade-Node package
 
 * Make sure you are in rtvdemos directory.
-* Extract the RTView_ClearBlade_Node directory out of the RTView-ClearBlade-master.zip into rtvdemos.
+* Extract the RTView-ClearBlade-Node directory out of the RTView-ClearBlade-master.zip into rtvdemos.
 
-*cd RTView_ClearBlade_Node*
+*cd RTView-ClearBlade-Node*
 
 *npm install*
 
