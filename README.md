@@ -2,6 +2,13 @@
 
 # RTView ClearBlade Demo
 
+## Overview
+By following the steps, described below, you will be:
+* Installing and running an RTView data server on your local computer.
+* Installing and running a node script that subscribes to a few ClearBlade topics and pushes the data to the RTView data server.
+* Viewing preexisting displays, populated by data, coming via a servlet within RTView, through your free trial account on RTViewCloud.
+
+
 ## Goals
 RTView-ClearBlade demo will: 
 * Show how easy it is to display ClearBlade topics in graphical and highly configurable displays in the Cloud.
@@ -99,7 +106,7 @@ Bring up a Command prompt.
 
 	Notice that you are automatically in your own private organization (e.g. JohnSPrivateOrg).
 	
-#### Connecting the displays to your local RTView data server
+### Connecting the displays to your local RTView data server
 
 * On the top menu, click on Data.
 
@@ -131,9 +138,11 @@ http://localhost:3270/rtvquery
 
 * Click on Import ….
 
-* In the file browser, change directory to \rtvdemos\RTView_ClearBlade_Displays.
+* In the file browser, change directory to \rtvdemos\RTView-ClearBlade-Displays.
 
-* Pick one of the displays (e.g. cb_mixing_plant_chicago_l.json) and click Open.
+* Select all displays and click Open.
+
+	This step only needs to be done once for each display.
 
 * Click on File in the menu.
 
@@ -145,7 +154,11 @@ http://localhost:3270/rtvquery
 	This display is configured to connect to your local RTView data server and collect data. This process then populates the display with live data that is being collected by the node script from ClearBlade.
 
 
-#### Connecting the displays to RTView's IoT data server on Amazon Cloud
+## External Connection
+You do not have to setup a local RTView data server to see the RTView-ClearBlade displays populated. 
+We have set up an instance in the Amazon cloud, dedicated to providing data for everyone. An instance of the RTView data server  and node subscriber program are already running on it. It is called iot-demo-server. The steps, below, will walk you through connecting the RTView-ClearBlade displays to iot-demo-server. You will need to get a free acccount on RTViewCloud, the steps for which, are described in the "Subscription, configuration and execution of the RTViewCloud Services" section, above.
+
+### Connecting the displays to RTView's IoT data server on Amazon Cloud
 
 * On the top menu, click on Data.
 
@@ -172,6 +185,16 @@ http://iot-demo-server.slsandbox.com:3270/rtvquery
 * On the top menu, click on Design.
 
 	This will bring up the RTDraw, which is RTViewCloud’s visual editor.
+	
+* Click on File in the menu.
+
+* Click on Import ….
+
+* In the file browser, change directory to \rtvdemos\RTView-ClearBlade-Displays.
+
+* Select all displays and click Open.
+
+	This step only needs to be done once for each display.
 	
 * Click on File in the menu.
 
