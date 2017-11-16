@@ -148,9 +148,9 @@ http://localhost:3270/rtvquery
 
 * Click on Open ….
 
-* Double click on cb_mixing_plant_chicago_l.
+* Double click on cb_mixing_plants.
 
-	This will load the cb_mixing_plant_chicago_l display into the editor. 
+	This will load the cb_mixing_plants display into the editor. 
 	This display is configured to connect to your local RTView data server and collect data. This process then populates the display with live data that is being collected by the node script from ClearBlade.
 
 
@@ -200,9 +200,9 @@ http://iot-demo-server.slsandbox.com:3270/rtvquery
 
 * Click on Open ….
 
-* Double click on cb_mixing_plant_chicago_l.
+* Double click on cb_mixing_plants.
 
-	This will load the cb_mixing_plant_chicago_l display into the editor. 
+	This will load the cb_mixing_plants display into the editor. 
 	
 * Click on Options in the menu.
 
