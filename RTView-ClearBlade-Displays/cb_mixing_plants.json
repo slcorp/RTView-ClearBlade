@@ -1,0 +1,1121 @@
+{
+    "modifiedDate": "2017-11-16T03:18:57.096Z",
+    "viewport": {
+        "x": 0,
+        "y": 0,
+        "scale": 1
+    },
+    "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 600,
+        "resizable": false
+    },
+    "preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAACIklEQVR4Xu2XsU3DYBQG34uQ0mcBMwIbkA1oKNiEEpiGgoYRQoNExwjpPAMFeZELkIWMZEUkPqOji/ST/3KXL4QMf1AGEkUjTBgE9iYwiEFgBmA4LsQgMAMwHBdiEJgBGI4LMQjMAAzHhRgEZgCG40IMAjMAw3EhBoEZgOG4EIPADMBwXIhBYAZgOC7EIDADMBwXYhCYARiOCzHI3xmoqvOIaMY8Y2a+jDk39ZnZLOSxntaL2K2/hO1isbmJ6+7x3RiJmTmL1zoLyE74drt9bZrmo23bs9Vq9blcLisi3iLi1iBjDJzgTFV1C7kcc1VmPow5N/WZ2SxkSFRV3fuRNfVbqHe/QUAxOpSqeo6Iqx5W901q8CPMP+oniFdVmx8BDHIC779eYZAp7Q/cbRCDHN3Af/ja+/3fe0S8R8TFkLXM7J87uthDL5h1kENfNPn3DAKrYxCDwAzAcFyIQWAGYDguxCAwAzAcF2IQmAEYjgsxCMwADMeFGARmAIbjQgwCMwDDcSEGgRmA4bgQg8AMwHBciEFgBmA4LsQgMAMwHBdiEJgBGI4LMQjMAAzHhRgEZgCG40IMAjMAw3EhBoEZgOG4EIPADMBwXIhBYAZgOC7EIDADMBwXYhCYARiOCzEIzAAMx4UYBGYAhuNCDAIzAMNxIQaBGYDhuBCDwAzAcFyIQWAGYDguxCAwAzAcF2IQmAEYjgsxCMwADMeFGARmAIazB/NXQGX9p7vZAAAAAElFTkSuQmCC",
+    "localVars": {
+        "gDemoServerURL": "LOCAL-DEMO-SERVER"
+    },
+    "styleSheet": {},
+    "linksRoute": "Angled",
+    "layout": "",
+    "version": "1.25.0",
+    "nodeDataArray": [
+        {
+            "key": -50,
+            "size": "302 281",
+            "category": "General",
+            "bgBorderRadius": 10,
+            "bgVisible": true,
+            "bgColor": "#ffffff",
+            "pos": "644.5 456.78",
+            "bgBorderVisible": true
+        },
+        {
+            "key": -38,
+            "size": "254 38",
+            "category": "General",
+            "bgBorderRadius": 10,
+            "bgVisible": true,
+            "bgColor": "#ffffff",
+            "pos": "132 152.67",
+            "bgBorderVisible": true
+        },
+        {
+            "key": 14,
+            "size": "522 113",
+            "category": "General",
+            "bgBorderRadius": 10,
+            "bgVisible": true,
+            "bgColor": "#ffffff",
+            "pos": "533.6 114.7",
+            "bgBorderVisible": true
+        },
+        {
+            "key": -5,
+            "size": "24 24",
+            "fixedAspect": true,
+            "category": "Image",
+            "imgVisible": true,
+            "imgSrc": "https://s3.amazonaws.com/rtviews3public/images/Lights/light_green_24.png",
+            "pos": "148.2 153"
+        },
+        {
+            "key": -6,
+            "size": "24 24",
+            "fixedAspect": true,
+            "category": "Image",
+            "imgVisible": true,
+            "imgSrc": "https://s3.amazonaws.com/rtviews3public/images/Lights/light_red_24.png",
+            "pos": "34.2 153"
+        },
+        {
+            "key": -7,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "RPM ALERT",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 10pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "87.2 153",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -8,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "TEMP ALERT",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 10pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "204.2 153",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": 130,
+            "category": "extern-metric",
+            "size": "96 94",
+            "dispName": "metric_meter_hc",
+            "labelText": "",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "InsideTop"
+            },
+            "miscProps": {
+                "valueMin": 50,
+                "valueMax": 2000,
+                "valueWarn": 1200,
+                "valueAlert": 1600,
+                "startAngle": -140,
+                "endAngle": 140
+            },
+            "pos": "351.3 108.6",
+            "labelFont": "normal normal 8pt sans-serif",
+            "bgColor": "#eee",
+            "bgVisible": true,
+            "bgBorderColor": "#666",
+            "bgBorderWidth": 0.5,
+            "bgBorderVisible": true,
+            "bindings": {
+                "valueText": {
+                    "url": "$gDemoServerURL",
+                    "cache": "ClearBladeCache",
+                    "table": "current",
+                    "value": "measurement;plant_name;metric_name;unit",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "HeatingAirTemp",
+                        "plant_id": "$gplant_id"
+                    },
+                    "type": "cache_advanced"
+                }
+            },
+            "valueWrap": false,
+            "imgVisible": false
+        },
+        {
+            "key": -12,
+            "category": "extern-metric",
+            "size": "96 94",
+            "dispName": "metric_meter_hc",
+            "labelText": "",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "InsideTop"
+            },
+            "miscProps": {
+                "valueMin": 50,
+                "valueMax": 2000,
+                "valueWarn": 1200,
+                "valueAlert": 1600,
+                "startAngle": -140,
+                "endAngle": 140
+            },
+            "pos": "467.3 108.6",
+            "labelFont": "normal normal 8pt sans-serif",
+            "bgColor": "#eee",
+            "bgVisible": true,
+            "bgBorderColor": "#666",
+            "bgBorderWidth": 0.5,
+            "bgBorderVisible": true,
+            "bindings": {
+                "valueText": {
+                    "url": "$gDemoServerURL",
+                    "cache": "ClearBladeCache",
+                    "table": "current",
+                    "value": "measurement;plant_name;metric_name;unit",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "DryingAirTemp",
+                        "plant_id": "$gplant_id"
+                    },
+                    "type": "cache_advanced"
+                }
+            }
+        },
+        {
+            "key": -13,
+            "category": "extern-metric",
+            "size": "96 94",
+            "dispName": "metric_meter_hc",
+            "labelText": "",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "InsideTop"
+            },
+            "miscProps": {
+                "valueMin": 50,
+                "valueMax": 2000,
+                "valueWarn": 1200,
+                "valueAlert": 1600,
+                "startAngle": -140,
+                "endAngle": 140
+            },
+            "pos": "583.3 108.6",
+            "labelFont": "normal normal 8pt sans-serif",
+            "bgColor": "#eee",
+            "bgVisible": true,
+            "bgBorderColor": "#666",
+            "bgBorderWidth": 0.5,
+            "bgBorderVisible": true,
+            "bindings": {
+                "valueText": {
+                    "url": "$gDemoServerURL",
+                    "cache": "ClearBladeCache",
+                    "table": "current",
+                    "value": "measurement;plant_name;metric_name;unit",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "CombustionAirTemp",
+                        "plant_id": "$gplant_id"
+                    },
+                    "type": "cache_advanced"
+                }
+            }
+        },
+        {
+            "key": -14,
+            "category": "extern-metric",
+            "size": "96 94",
+            "dispName": "metric_meter_hc",
+            "labelText": "",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "InsideTop"
+            },
+            "miscProps": {
+                "valueMin": 50,
+                "valueMax": 2000,
+                "valueWarn": 1200,
+                "valueAlert": 1600,
+                "startAngle": -140,
+                "endAngle": 140
+            },
+            "pos": "699.3 108.6",
+            "labelFont": "normal normal 8pt sans-serif",
+            "bgColor": "#eee",
+            "bgVisible": true,
+            "bgBorderColor": "#666",
+            "bgBorderWidth": 0.5,
+            "bgBorderVisible": true,
+            "bindings": {
+                "valueText": {
+                    "url": "$gDemoServerURL",
+                    "cache": "ClearBladeCache",
+                    "table": "current",
+                    "value": "measurement;plant_name;metric_name;unit",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "ExhaustAirTemp",
+                        "plant_id": "$gplant_id"
+                    },
+                    "type": "cache_advanced"
+                }
+            }
+        },
+        {
+            "key": 12,
+            "category": "extern-trendchart",
+            "bgVisible": true,
+            "size": "290 116",
+            "fillFlag": true,
+            "legendVisFlag": true,
+            "legendPos": "right",
+            "scrollFlag": true,
+            "stripFlag": false,
+            "pos": "642.6 394.56",
+            "bindings": {
+                "component": {
+                    "url": "$gDemoServerURL",
+                    "cache": "ClearBladeCache",
+                    "table": "history",
+                    "value": "time_stamp;measurement;metric_name",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "bearing/bearing1/bearingrpm",
+                        "plant_id": "$gplant_id"
+                    },
+                    "type": "cache_advanced"
+                }
+            },
+            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png"
+        },
+        {
+            "key": -23,
+            "size": "216 281",
+            "category": "General",
+            "bgBorderRadius": 10,
+            "bgVisible": true,
+            "bgColor": "#ffffff",
+            "pos": "379.5 457.61",
+            "bgBorderVisible": true
+        },
+        {
+            "key": -24,
+            "category": "extern-trendchart",
+            "bgVisible": true,
+            "size": "285 116",
+            "fillFlag": true,
+            "legendVisFlag": true,
+            "legendPos": "right",
+            "scrollFlag": true,
+            "stripFlag": false,
+            "pos": "642.5 534.56",
+            "bindings": {
+                "component": {
+                    "url": "$gDemoServerURL",
+                    "cache": "ClearBladeCache",
+                    "table": "history",
+                    "value": "time_stamp;measurement;metric_name",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "bearing/bearing1/bearingtemperature",
+                        "plant_id": "$gplant_id"
+                    },
+                    "type": "cache_advanced"
+                }
+            },
+            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png"
+        },
+        {
+            "key": -25,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "BEARING MONITOR",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 10pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "384 337.56",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -26,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Bearing RPM",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 10pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "548 327.33",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -27,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Bearing Temperature (F)",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 10pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "579 467.67",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": 150,
+            "category": "extern-metric",
+            "size": "202 79",
+            "fixedAspect": true,
+            "dispName": "metric_meter_hc",
+            "bgColor": "#ededed",
+            "labelText": "Bearing RPM",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "miscProps": {
+                "bgShape": "rect",
+                "aspectRatio": 1.2,
+                "valueMin": 500,
+                "valueMax": 4000,
+                "valueAlert": 0,
+                "startAngle": -45,
+                "endAngle": 45,
+                "dialRadius": "100%",
+                "yAxis": {
+                    "tickPosition": "outside",
+                    "labels": {
+                        "rotation": "auto",
+                        "distance": 15
+                    },
+                    "title": {
+                        "y": -15
+                    }
+                }
+            },
+            "pos": "383 394.22",
+            "labelVisible": false,
+            "labelFont": "normal normal 8pt sans-serif",
+            "bgVisible": true,
+            "bgBorderColor": "#666",
+            "bgBorderWidth": 0.5,
+            "bgBorderVisible": true,
+            "bindings": {
+                "valueText": {
+                    "url": "$gDemoServerURL",
+                    "cache": "ClearBladeCache",
+                    "table": "current",
+                    "value": "measurement;plant_name;metric_name;unit",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "bearing/bearing1/bearingrpm",
+                        "plant_id": "$gplant_id"
+                    },
+                    "type": "cache_advanced"
+                }
+            }
+        },
+        {
+            "key": -28,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Bearing RPM",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 9pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "381 452",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -29,
+            "category": "extern-metric",
+            "size": "202 79",
+            "fixedAspect": true,
+            "dispName": "metric_meter_hc",
+            "bgColor": "#ededed",
+            "labelText": "Bearing RPM",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "miscProps": {
+                "bgShape": "rect",
+                "aspectRatio": 1.2,
+                "valueMin": 50,
+                "valueMax": 2000,
+                "valueAlert": 0,
+                "startAngle": -45,
+                "endAngle": 45,
+                "dialRadius": "100%",
+                "yAxis": {
+                    "tickPosition": "outside",
+                    "labels": {
+                        "rotation": "auto",
+                        "distance": 15
+                    },
+                    "title": {
+                        "y": -15
+                    }
+                }
+            },
+            "pos": "384 514.08",
+            "labelVisible": false,
+            "labelFont": "normal normal 8pt sans-serif",
+            "bgVisible": true,
+            "bgBorderColor": "#666",
+            "bgBorderWidth": 0.5,
+            "bgBorderVisible": true,
+            "bindings": {
+                "valueText": {
+                    "url": "$gDemoServerURL",
+                    "cache": "ClearBladeCache",
+                    "table": "current",
+                    "value": "measurement;plant_name;metric_name;unit",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "bearing/bearing1/bearingtemperature",
+                        "plant_id": "$gplant_id"
+                    },
+                    "type": "cache_advanced"
+                }
+            }
+        },
+        {
+            "key": -30,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Bearing Temperature (F)",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 9pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "381 574.22",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -31,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Mixer Aggregate Temperatures (F)",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 10pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "480 183",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -32,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Mixer Air Temperatures (F)",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 10pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "460 46",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -33,
+            "size": "523 118",
+            "category": "General",
+            "bgBorderRadius": 10,
+            "bgVisible": true,
+            "bgColor": "#ffffff",
+            "pos": "533.5 253.33",
+            "bgBorderVisible": true
+        },
+        {
+            "key": -34,
+            "category": "extern-metric",
+            "size": "96 94",
+            "dispName": "metric_meter_hc",
+            "labelText": "",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "InsideTop"
+            },
+            "miscProps": {
+                "valueMin": 50,
+                "valueMax": 2000,
+                "valueWarn": 1200,
+                "valueAlert": 1600,
+                "startAngle": -140,
+                "endAngle": 140
+            },
+            "pos": "354.7 242.73",
+            "labelFont": "normal normal 8pt sans-serif",
+            "bgColor": "#eee",
+            "bgVisible": true,
+            "bgBorderColor": "#666",
+            "bgBorderWidth": 0.5,
+            "bgBorderVisible": true,
+            "bindings": {
+                "valueText": {
+                    "url": "$gDemoServerURL",
+                    "cache": "ClearBladeCache",
+                    "table": "current",
+                    "value": "measurement;plant_name;metric_name;unit",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "HeatingAggregateTemp",
+                        "plant_id": "$gplant_id"
+                    },
+                    "type": "cache_advanced"
+                }
+            },
+            "labelVisible": false
+        },
+        {
+            "key": -35,
+            "category": "extern-metric",
+            "size": "96 94",
+            "dispName": "metric_meter_hc",
+            "labelText": "DryingAirTemp",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "InsideTop"
+            },
+            "miscProps": {
+                "valueMin": 50,
+                "valueMax": 2000,
+                "valueWarn": 1200,
+                "valueAlert": 1600,
+                "startAngle": -140,
+                "endAngle": 140
+            },
+            "pos": "470.7 242.73",
+            "labelFont": "normal normal 8pt sans-serif",
+            "bgColor": "#eee",
+            "bgVisible": true,
+            "bgBorderColor": "#666",
+            "bgBorderWidth": 0.5,
+            "bgBorderVisible": true,
+            "bindings": {
+                "valueText": {
+                    "url": "$gDemoServerURL",
+                    "cache": "ClearBladeCache",
+                    "table": "current",
+                    "value": "measurement;plant_name;metric_name;unit",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "DryingAggregateTemp",
+                        "plant_id": "$gplant_id"
+                    },
+                    "type": "cache_advanced"
+                }
+            },
+            "labelVisible": false
+        },
+        {
+            "key": -36,
+            "category": "extern-metric",
+            "size": "96 94",
+            "dispName": "metric_meter_hc",
+            "labelText": "ExhaustAirTemp",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "InsideTop"
+            },
+            "miscProps": {
+                "valueMin": 50,
+                "valueMax": 2000,
+                "valueWarn": 1200,
+                "valueAlert": 1600,
+                "startAngle": -140,
+                "endAngle": 140
+            },
+            "pos": "586.7 242.73",
+            "labelFont": "normal normal 8pt sans-serif",
+            "bgColor": "#eee",
+            "bgVisible": true,
+            "bgBorderColor": "#666",
+            "bgBorderWidth": 0.5,
+            "bgBorderVisible": true,
+            "bindings": {
+                "valueText": {
+                    "url": "$gDemoServerURL",
+                    "cache": "ClearBladeCache",
+                    "table": "current",
+                    "value": "measurement;plant_name;metric_name;unit",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "EntryAggregateTemp",
+                        "plant_id": "$gplant_id"
+                    },
+                    "type": "cache_advanced"
+                }
+            },
+            "labelVisible": false
+        },
+        {
+            "key": -37,
+            "category": "extern-metric",
+            "size": "96 94",
+            "dispName": "metric_meter_hc",
+            "labelText": "CombustionAirTemp",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "InsideTop"
+            },
+            "miscProps": {
+                "valueMin": 50,
+                "valueMax": 2000,
+                "valueWarn": 1200,
+                "valueAlert": 1600,
+                "startAngle": -140,
+                "endAngle": 140
+            },
+            "pos": "702.7 242.73",
+            "labelFont": "normal normal 8pt sans-serif",
+            "bgColor": "#eee",
+            "bgVisible": true,
+            "bgBorderColor": "#666",
+            "bgBorderWidth": 0.5,
+            "bgBorderVisible": true,
+            "bindings": {
+                "valueText": {
+                    "url": "$gDemoServerURL",
+                    "cache": "ClearBladeCache",
+                    "table": "current",
+                    "value": "measurement;plant_name;metric_name;unit",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "ExitAggregateTemp",
+                        "plant_id": "$gplant_id"
+                    },
+                    "type": "cache_advanced"
+                }
+            },
+            "labelVisible": false
+        },
+        {
+            "key": -39,
+            "size": "188 31",
+            "category": "General",
+            "bgBorderRadius": 10,
+            "bgVisible": true,
+            "bgColor": "#a9ffaa",
+            "pos": "131.5 85.33",
+            "bgBorderVisible": true
+        },
+        {
+            "key": -40,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Plant Status",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 12pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "89 86",
+            "labelColor": "#000000"
+        },
+        {
+            "key": -41,
+            "category": "extern-metric",
+            "size": "27 36",
+            "dispName": "metric_card",
+            "labelText": "ONLINE",
+            "labelAlignment": {
+                "horizontal": "Right",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "valueText": "0",
+            "imgVisible": true,
+            "imgSrc": "assets/images/symlib/Shapes/check_green_24.png",
+            "bgBorderVisible": false,
+            "miscProps": {
+                "alerts": [
+                    {
+                        "value": 1,
+                        "comp": "=",
+                        "imgSrc": "assets/images/i_fa_warning_24.png"
+                    },
+                    {
+                        "value": 2,
+                        "comp": "=",
+                        "imgSrc": "assets/images/i_fa_alert_24.png"
+                    }
+                ]
+            },
+            "pos": "148.5 82",
+            "bgVisible": true,
+            "bgBorderWidth": 0.5,
+            "bgBorderRadius": 5
+        },
+        {
+            "key": -42,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Heating Air Temp (F)",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 7pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "355 163",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -43,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Drying Air Temp (F)",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 7pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "469 163",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -44,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Combustion Air Temp (F)",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 7pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "585 163",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -45,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Exhaust Air Temp (F)",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 7pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "703.38 163",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -46,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Heating Aggregate Temp (F)",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 7pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "343.62 301.34",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -47,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Drying Aggregate Temp (F)",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 7pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "473.62 301.34",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -48,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Entry Aggregate Temp (F)",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 7pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "597.62 301.34",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": -49,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Exit Aggregate Temp (F)",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 7pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "715 301.34",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": 19,
+            "category": "extern-cachectrl2",
+            "bgVisible": true,
+            "size": "270 40",
+            "server": "$gDemoServerURL",
+            "cache": "ClearBladeCache",
+            "autoSelect": true,
+            "setGlobals": true,
+            "indexColumns": "plant_id",
+            "bgVis": false,
+            "pos": "670 30",
+            "dispName": "cachectrl2",
+            "serverURL": "http://localhost:3270/rtvquery"
+        },
+        {
+            "key": 11,
+            "category": "extern-metric",
+            "size": "250 200",
+            "dispName": "metric_card",
+            "bgColor": "#dbdbdb",
+            "labelText": "Boolean",
+            "labelAlignment": {
+                "horizontal": "Right",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "imgVisible": true,
+            "bgBorderVisible": false,
+            "miscProps": {
+                "alerts": [
+                    {
+                        "value": "A",
+                        "comp": "=",
+                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/fae92bc5-249d-419a-9964-d91e650b5ef8/plant_san_francisco.jpg"
+                    },
+                    {
+                        "value": "B",
+                        "comp": "=",
+                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/545e4267-3e3b-465d-8067-7604d4be22a4/plant_seattle.jpg"
+                    },
+                    {
+                        "value": "C",
+                        "comp": "=",
+                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/bb9f4542-11c3-4cd6-82e9-50083c393fbb/plant_chicago.jpg"
+                    }
+                ]
+            },
+            "pos": "130 280",
+            "labelVisible": false,
+            "bgVisible": true,
+            "bgBorderWidth": 0.5,
+            "bgBorderRadius": 5,
+            "bindings": {
+                "valueText": {
+                    "name": "gplant_id",
+                    "type": "variable"
+                }
+            }
+        },
+        {
+            "key": -51,
+            "category": "extern-metric",
+            "size": "250 200",
+            "dispName": "metric_card",
+            "bgColor": "#dbdbdb",
+            "labelText": "Boolean",
+            "labelAlignment": {
+                "horizontal": "Right",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "imgVisible": true,
+            "bgBorderVisible": false,
+            "miscProps": {
+                "alerts": [
+                    {
+                        "value": "A",
+                        "comp": "=",
+                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/ca619007-c3af-48e3-aa96-145426861aa6/san_francisco_map.jpg"
+                    },
+                    {
+                        "value": "B",
+                        "comp": "=",
+                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/430f02d0-4f56-43da-8ac3-792c72daee08/seattle_map.jpg"
+                    },
+                    {
+                        "value": "C",
+                        "comp": "=",
+                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/1997bc88-2b6c-4df7-8346-1be87839486f/chicago_map.jpg"
+                    }
+                ]
+            },
+            "pos": "130 490",
+            "labelVisible": false,
+            "bgVisible": true,
+            "bgBorderWidth": 0.5,
+            "bgBorderRadius": 5,
+            "bindings": {
+                "valueText": {
+                    "name": "gplant_id",
+                    "type": "variable"
+                }
+            }
+        },
+        {
+            "key": -52,
+            "category": "extern-metric",
+            "size": "359 28",
+            "dispName": "metric_card",
+            "bgColor": "#dbdbdb",
+            "labelText": "",
+            "labelAlignment": {
+                "horizontal": "InsideLeft",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "imgVisible": false,
+            "bgBorderVisible": false,
+            "miscProps": {
+                "alerts": [
+                    {
+                        "value": "A",
+                        "comp": "=",
+                        "labelText": "MIXING PLANT A - SAN FRANCISCO"
+                    },
+                    {
+                        "value": "B",
+                        "comp": "=",
+                        "labelText": "MIXING PLANT B - SEATTLE"
+                    },
+                    {
+                        "value": "C",
+                        "comp": "=",
+                        "labelText": "MIXING PLANT C - CHICAGO"
+                    }
+                ]
+            },
+            "pos": "200 30",
+            "bgVisible": false,
+            "bgBorderWidth": 0.5,
+            "bgBorderRadius": 5,
+            "bindings": {
+                "valueText": {
+                    "name": "gplant_id",
+                    "type": "variable"
+                }
+            },
+            "labelFont": "normal bold 14pt sans-serif",
+            "labelColor": "#497ee7"
+        }
+    ],
+    "linkDataArray": []
+}

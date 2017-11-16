@@ -1,0 +1,230 @@
+{
+    "modifiedDate": "2017-11-16T04:47:49.528Z",
+    "viewport": {
+        "x": 0,
+        "y": 0,
+        "scale": 1
+    },
+    "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 600,
+        "resizable": false
+    },
+    "preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAADLklEQVR4Xu2aT0sUcRzGn9/szKDZYSUJYn0BHTp3CLq4a0L3XkCXqLYIOkdUx4JAtj/0SiRzhegteOgepKWUELg1O/P7xm81c1FDliGfwWcvIjLrZz6feWZH0EEvKgOOikYwUBCyi0BBFITMABmOFqIgZAbIcLQQBSEzQIajhSgImQEyHC1EQcgMkOFoIQpCZoAMRwtREDIDZDhaiIKQGSDD0UIUhMwAGY4WoiBkBshwtBAFITNAhqOFKMhoBszsEQAb7WjAOfd41GP/53GVWYiZjRwjCHXOVeJcKwEZhPazwuyQf7QsIiD2ebB+6MWcJEklzrUSkMHy9YU1G/M5Chdhb5fIR4MIPvLoR8BEUeDZ7DnUzO/Gubu0jjdXG5U410pABrM3Fj7/85Y1nvfQi1O8nqnj3uI6ns9N46dLcL/7CZ2ZBsbTWiXOtRKQBwbZ+Ujpx4akiJBHQFJ4WFjQntd8q46axUjTtBLnWgnI4Pdrbvbg3eq+z4h+LYQAnAHmgMvn6/jw8TuSYguX6qdx7eKZwTEKUvKzYpZldnv5C5zFcAc8/Ro8Cg9M+h9IigLfxqbwtHkWpyxXkJJbDN4uBAlf4zzGzfdr+36FIcdEZthKk8HPXjTDMv7eALSQkquEIHe6G3A+Rme2vv1khQiJZbi1vIlOcxLtxVW8ujK98/fj8N1YQUoO0s8ya3c3ULNfmG81ht69vbSJl63tSH9e3mWILN39XkFKDtLLcovgBzehh29X8GTuAmID8iM+lihIyUFOytsd8fo6KTqO/zwV5PgbDBEoiIKQGSDD0UIUhMwAGY4WoiBkBshwtBAFITNAhqOFKAiZATIcLURByAyQ4WghCkJmgAxHC1EQMgNkOFqIgpAZIMPRQhSEzAAZjhaiIGQGyHC0EAUhM0CGo4UoCJkBMhwtREHIDJDhaCEKQmaADEcLURAyA2Q4WoiCkBkgw9FCFITMABmOFqIgZAbIcLQQBSEzQIajhSgImQEyHC1EQcgMkOFoIQpCZoAMRwtREDIDZDhaiIKQGSDD0UIUhMwAGY4WoiBkBshwtBAFITNAhqOFKAiZATIcLYQsyG9vKJtlrqqgGgAAAABJRU5ErkJggg==",
+    "localVars": {
+        "gDemoServerURL": "LOCAL-DEMO-SERVER"
+    },
+    "styleSheet": {},
+    "linksRoute": "Angled",
+    "layout": "",
+    "version": "1.25.0",
+    "nodeDataArray": [
+        {
+            "key": 21,
+            "size": "793 453",
+            "fixedAspect": true,
+            "category": "Image",
+            "imgVisible": true,
+            "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/d2b1f18b-5801-4d2d-a4a8-5e52950f063b/usa_map.jpg",
+            "pos": "402 370",
+            "scaleImage": true
+        },
+        {
+            "key": 2,
+            "size": "794 96",
+            "figure": "RoundedRectangle",
+            "category": "General",
+            "bgVisible": true,
+            "bgBorderVisible": true,
+            "labelVisible": false,
+            "valueVisible": true,
+            "valueText": "ClearBlade Platform provides IoT data for Mixing Plants from different locations in the USA. In this display, you could double click the object that shows the plant_id value for San Francisco, Seattle and Chicago and the navigation will take you to another display. In the drill down display, the live temperature and RPM data from active pumps for the plant you chose are being shown. ",
+            "valueWrap": true,
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "labelFont": "normal normal 12pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "400 92"
+        },
+        {
+            "key": 1,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "MIXING PLANTS - USA LOCATIONS",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 12pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "387 24",
+            "labelColor": "#497ee7"
+        },
+        {
+            "key": 4,
+            "category": "extern-custom-table",
+            "bgVisible": true,
+            "size": "128 46",
+            "rowSeriesFlag": true,
+            "pos": "80 350",
+            "dispName": "cachegrid",
+            "script": "if (rtvEvent.type === 'select') {\n     var ev = rtvEvent;     \n     var rtvPanel = ev.rtvPanel;     \n     rtvPanel.updateVars({gplant_id : 'A' });     \n     rtvPanel.load('cb_mixing_plants.json'); \n}\n",
+            "bindings": {
+                "component": {
+                    "url": "$gDemoServerURL",
+                    "cache": "ClearBladeCache",
+                    "table": "current",
+                    "value": "plant_id",
+                    "timeRange": -1,
+                    "filter": {
+                        "plant_id": "A"
+                    },
+                    "type": "cache_advanced"
+                }
+            },
+            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png",
+            "columns": {
+                "plant_id": {
+                    "title": "",
+                    "width": 0,
+                    "format": "",
+                    "align": "center",
+                    "hidden": false
+                }
+            }
+        },
+        {
+            "key": -5,
+            "category": "extern-custom-table",
+            "bgVisible": true,
+            "size": "128 46",
+            "rowSeriesFlag": true,
+            "pos": "70 190",
+            "dispName": "cachegrid",
+            "script": "if (rtvEvent.type === 'select') {\n     var ev = rtvEvent;     \n     var rtvPanel = ev.rtvPanel;     \n     rtvPanel.updateVars({gplant_id : 'B' });     \n     rtvPanel.load('cb_mixing_plants.json'); \n}\n",
+            "bindings": {
+                "component": {
+                    "url": "$gDemoServerURL",
+                    "cache": "ClearBladeCache",
+                    "table": "current",
+                    "value": "plant_id",
+                    "timeRange": -1,
+                    "filter": {
+                        "plant_id": "B"
+                    },
+                    "type": "cache_advanced"
+                }
+            },
+            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png",
+            "columns": {
+                "plant_id": {
+                    "title": "",
+                    "width": 0,
+                    "format": "",
+                    "align": "center",
+                    "hidden": false
+                }
+            }
+        },
+        {
+            "key": -6,
+            "category": "extern-custom-table",
+            "bgVisible": true,
+            "size": "128 46",
+            "rowSeriesFlag": true,
+            "pos": "510 280",
+            "dispName": "cachegrid",
+            "script": "if (rtvEvent.type === 'select') {\n     var ev = rtvEvent;     \n     var rtvPanel = ev.rtvPanel;     \n     rtvPanel.updateVars({gplant_id : 'C' });     \n     rtvPanel.load('cb_mixing_plants.json'); \n}\n",
+            "bindings": {
+                "component": {
+                    "url": "$gDemoServerURL",
+                    "cache": "ClearBladeCache",
+                    "table": "current",
+                    "value": "plant_id",
+                    "timeRange": -1,
+                    "filter": {
+                        "plant_id": "C"
+                    },
+                    "type": "cache_advanced"
+                }
+            },
+            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png",
+            "columns": {
+                "plant_id": {
+                    "title": "",
+                    "width": 0,
+                    "format": "",
+                    "align": "center",
+                    "hidden": false
+                }
+            }
+        },
+        {
+            "key": -7,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "San Francisco",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 12pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "80 310",
+            "labelColor": "#4c4c4c"
+        },
+        {
+            "key": -8,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Seattle",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 12pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "175 193",
+            "labelColor": "#4c4c4c"
+        },
+        {
+            "key": -9,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelText": "Chicago",
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "normal bold 12pt sans-serif",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "515 325",
+            "labelColor": "#4c4c4c"
+        }
+    ],
+    "linkDataArray": []
+}
