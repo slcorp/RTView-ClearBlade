@@ -59,7 +59,7 @@ Bring up a Command prompt.
 
 	Where sourcePath is the location of your download
 
-*unzip RTViewDataServer-Mini.zip*
+Unzip the RTViewDataServer-Mini.zip using your favorite zip/unzip utility.
 
 	This will create a directory under rtvdemos by the same name (i.e., RTViewDataServer-Mini).
 
