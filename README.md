@@ -171,7 +171,7 @@ We have set up an instance in the Amazon cloud, dedicated to providing data for 
 IOT-DEMO-SERVER
 
 * For Host/URL, type:
-http://iot-demo-server.slsandbox.com:3270/rtvquery
+http://iot-demo-server.slsandbox.com/rtvquery
 
 * Click on Save Added Servers.
 
