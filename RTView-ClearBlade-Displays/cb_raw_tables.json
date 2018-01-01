@@ -13,9 +13,6 @@
         "resizable": false
     },
     "preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAABZUlEQVR4Xu3TQREAAAiEQK9/aWvsAxMw4O06ysAommCuINgTFKQgmAEMp4UUBDOA4bSQgmAGMJwWUhDMAIbTQgqCGcBwWkhBMAMYTgspCGYAw2khBcEMYDgtpCCYAQynhRQEM4DhtJCCYAYwnBZSEMwAhtNCCoIZwHBaSEEwAxhOCykIZgDDaSEFwQxgOC2kIJgBDKeFFAQzgOG0kIJgBjCcFlIQzACG00IKghnAcFpIQTADGE4LKQhmAMNpIQXBDGA4LaQgmAEMp4UUBDOA4bSQgmAGMJwWUhDMAIbTQgqCGcBwWkhBMAMYTgspCGYAw2khBcEMYDgtpCCYAQynhRQEM4DhtJCCYAYwnBZSEMwAhtNCCoIZwHBaSEEwAxhOCykIZgDDaSEFwQxgOC2kIJgBDKeFFAQzgOG0kIJgBjCcFlIQzACG00IKghnAcFpIQTADGE4LKQhmAMNpIQXBDGA4LQQL8oTPAGUY76lBAAAAAElFTkSuQmCC",
-    "localVars": {
-        "gDemoServerURL": "LOCAL-DEMO-SERVER"
-    },
     "styleSheet": {},
     "linksRoute": "Angled",
     "layout": "",
@@ -31,7 +28,7 @@
             "dispName": "cachegrid",
             "bindings": {
                 "component": {
-                    "url": "$gDemoServerURL",
+                    "url": "CLEARBLADE-IOT-SERVER",
                     "cache": "ClearBladeCache",
                     "table": "current",
                     "value": "*",
@@ -82,7 +79,7 @@
             "dispName": "cachegrid",
             "bindings": {
                 "component": {
-                    "url": "$gDemoServerURL",
+                    "url": "CLEARBLADE-IOT-SERVER",
                     "cache": "ClearBladeCache",
                     "table": "history",
                     "value": "*",
