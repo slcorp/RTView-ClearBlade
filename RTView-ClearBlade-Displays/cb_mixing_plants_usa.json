@@ -1,5 +1,5 @@
 {
-    "modifiedDate": "2017-11-16T04:47:49.528Z",
+    "modifiedDate": "2017-12-24T22:36:00.895Z",
     "viewport": {
         "x": 0,
         "y": 0,
@@ -13,13 +13,10 @@
         "resizable": false
     },
     "preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAADLklEQVR4Xu2aT0sUcRzGn9/szKDZYSUJYn0BHTp3CLq4a0L3XkCXqLYIOkdUx4JAtj/0SiRzhegteOgepKWUELg1O/P7xm81c1FDliGfwWcvIjLrZz6feWZH0EEvKgOOikYwUBCyi0BBFITMABmOFqIgZAbIcLQQBSEzQIajhSgImQEyHC1EQcgMkOFoIQpCZoAMRwtREDIDZDhaiIKQGSDD0UIUhMwAGY4WoiBkBshwtBAFITNAhqOFKMhoBszsEQAb7WjAOfd41GP/53GVWYiZjRwjCHXOVeJcKwEZhPazwuyQf7QsIiD2ebB+6MWcJEklzrUSkMHy9YU1G/M5Chdhb5fIR4MIPvLoR8BEUeDZ7DnUzO/Gubu0jjdXG5U410pABrM3Fj7/85Y1nvfQi1O8nqnj3uI6ns9N46dLcL/7CZ2ZBsbTWiXOtRKQBwbZ+Ujpx4akiJBHQFJ4WFjQntd8q46axUjTtBLnWgnI4Pdrbvbg3eq+z4h+LYQAnAHmgMvn6/jw8TuSYguX6qdx7eKZwTEKUvKzYpZldnv5C5zFcAc8/Ro8Cg9M+h9IigLfxqbwtHkWpyxXkJJbDN4uBAlf4zzGzfdr+36FIcdEZthKk8HPXjTDMv7eALSQkquEIHe6G3A+Rme2vv1khQiJZbi1vIlOcxLtxVW8ujK98/fj8N1YQUoO0s8ya3c3ULNfmG81ht69vbSJl63tSH9e3mWILN39XkFKDtLLcovgBzehh29X8GTuAmID8iM+lihIyUFOytsd8fo6KTqO/zwV5PgbDBEoiIKQGSDD0UIUhMwAGY4WoiBkBshwtBAFITNAhqOFKAiZATIcLURByAyQ4WghCkJmgAxHC1EQMgNkOFqIgpAZIMPRQhSEzAAZjhaiIGQGyHC0EAUhM0CGo4UoCJkBMhwtREHIDJDhaCEKQmaADEcLURAyA2Q4WoiCkBkgw9FCFITMABmOFqIgZAbIcLQQBSEzQIajhSgImQEyHC1EQcgMkOFoIQpCZoAMRwtREDIDZDhaiIKQGSDD0UIUhMwAGY4WoiBkBshwtBAFITNAhqOFKAiZATIcLYQsyG9vKJtlrqqgGgAAAABJRU5ErkJggg==",
-    "localVars": {
-        "gDemoServerURL": "LOCAL-DEMO-SERVER"
-    },
     "styleSheet": {},
     "linksRoute": "Angled",
     "layout": "",
-    "version": "1.25.0",
+    "version": "1.26.0",
     "nodeDataArray": [
         {
             "key": 21,
@@ -27,7 +24,7 @@
             "fixedAspect": true,
             "category": "Image",
             "imgVisible": true,
-            "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/d2b1f18b-5801-4d2d-a4a8-5e52950f063b/usa_map.jpg",
+            "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/b087161c-ef15-43ed-8120-8f81258ba722/usa_map.jpg",
             "pos": "402 370",
             "scaleImage": true
         },
@@ -80,7 +77,7 @@
             "script": "if (rtvEvent.type === 'select') {\n     var ev = rtvEvent;     \n     var rtvPanel = ev.rtvPanel;     \n     rtvPanel.updateVars({gplant_id : 'A' });     \n     rtvPanel.load('cb_mixing_plants.json'); \n}\n",
             "bindings": {
                 "component": {
-                    "url": "$gDemoServerURL",
+                    "url": "CLEARBLADE-IOT-SERVER",
                     "cache": "ClearBladeCache",
                     "table": "current",
                     "value": "plant_id",
@@ -113,7 +110,7 @@
             "script": "if (rtvEvent.type === 'select') {\n     var ev = rtvEvent;     \n     var rtvPanel = ev.rtvPanel;     \n     rtvPanel.updateVars({gplant_id : 'B' });     \n     rtvPanel.load('cb_mixing_plants.json'); \n}\n",
             "bindings": {
                 "component": {
-                    "url": "$gDemoServerURL",
+                    "url": "CLEARBLADE-IOT-SERVER",
                     "cache": "ClearBladeCache",
                     "table": "current",
                     "value": "plant_id",
@@ -146,7 +143,7 @@
             "script": "if (rtvEvent.type === 'select') {\n     var ev = rtvEvent;     \n     var rtvPanel = ev.rtvPanel;     \n     rtvPanel.updateVars({gplant_id : 'C' });     \n     rtvPanel.load('cb_mixing_plants.json'); \n}\n",
             "bindings": {
                 "component": {
-                    "url": "$gDemoServerURL",
+                    "url": "CLEARBLADE-IOT-SERVER",
                     "cache": "ClearBladeCache",
                     "table": "current",
                     "value": "plant_id",
