@@ -13,9 +13,6 @@
         "resizable": false
     },
     "preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAACIklEQVR4Xu2XsU3DYBQG34uQ0mcBMwIbkA1oKNiEEpiGgoYRQoNExwjpPAMFeZELkIWMZEUkPqOji/ST/3KXL4QMf1AGEkUjTBgE9iYwiEFgBmA4LsQgMAMwHBdiEJgBGI4LMQjMAAzHhRgEZgCG40IMAjMAw3EhBoEZgOG4EIPADMBwXIhBYAZgOC7EIDADMBwXYhCYARiOCzHI3xmoqvOIaMY8Y2a+jDk39ZnZLOSxntaL2K2/hO1isbmJ6+7x3RiJmTmL1zoLyE74drt9bZrmo23bs9Vq9blcLisi3iLi1iBjDJzgTFV1C7kcc1VmPow5N/WZ2SxkSFRV3fuRNfVbqHe/QUAxOpSqeo6Iqx5W901q8CPMP+oniFdVmx8BDHIC779eYZAp7Q/cbRCDHN3Af/ja+/3fe0S8R8TFkLXM7J87uthDL5h1kENfNPn3DAKrYxCDwAzAcFyIQWAGYDguxCAwAzAcF2IQmAEYjgsxCMwADMeFGARmAIbjQgwCMwDDcSEGgRmA4bgQg8AMwHBciEFgBmA4LsQgMAMwHBdiEJgBGI4LMQjMAAzHhRgEZgCG40IMAjMAw3EhBoEZgOG4EIPADMBwXIhBYAZgOC7EIDADMBwXYhCYARiOCzEIzAAMx4UYBGYAhuNCDAIzAMNxIQaBGYDhuBCDwAzAcFyIQWAGYDguxCAwAzAcF2IQmAEYjgsxCMwADMeFGARmAIazB/NXQGX9p7vZAAAAAElFTkSuQmCC",
-    "localVars": {
-        "gDemoServerURL": "LOCAL-DEMO-SERVER"
-    },
     "styleSheet": {},
     "linksRoute": "Angled",
     "layout": "",
@@ -134,7 +131,7 @@
             "bgBorderVisible": true,
             "bindings": {
                 "valueText": {
-                    "url": "$gDemoServerURL",
+                    "url": "CLEARBLADE-IOT-SERVER",
                     "cache": "ClearBladeCache",
                     "table": "current",
                     "value": "measurement;plant_name;metric_name;unit",
@@ -176,7 +173,7 @@
             "bgBorderVisible": true,
             "bindings": {
                 "valueText": {
-                    "url": "$gDemoServerURL",
+                    "url": "CLEARBLADE-IOT-SERVER",
                     "cache": "ClearBladeCache",
                     "table": "current",
                     "value": "measurement;plant_name;metric_name;unit",
@@ -216,7 +213,7 @@
             "bgBorderVisible": true,
             "bindings": {
                 "valueText": {
-                    "url": "$gDemoServerURL",
+                    "url": "CLEARBLADE-IOT-SERVER",
                     "cache": "ClearBladeCache",
                     "table": "current",
                     "value": "measurement;plant_name;metric_name;unit",
@@ -256,7 +253,7 @@
             "bgBorderVisible": true,
             "bindings": {
                 "valueText": {
-                    "url": "$gDemoServerURL",
+                    "url": "CLEARBLADE-IOT-SERVER",
                     "cache": "ClearBladeCache",
                     "table": "current",
                     "value": "measurement;plant_name;metric_name;unit",
@@ -282,7 +279,7 @@
             "pos": "642.6 394.56",
             "bindings": {
                 "component": {
-                    "url": "$gDemoServerURL",
+                    "url": "CLEARBLADE-IOT-SERVER",
                     "cache": "ClearBladeCache",
                     "table": "history",
                     "value": "time_stamp;measurement;metric_name",
@@ -319,7 +316,7 @@
             "pos": "642.5 534.56",
             "bindings": {
                 "component": {
-                    "url": "$gDemoServerURL",
+                    "url": "CLEARBLADE-IOT-SERVER",
                     "cache": "ClearBladeCache",
                     "table": "history",
                     "value": "time_stamp;measurement;metric_name",
@@ -432,7 +429,7 @@
             "bgBorderVisible": true,
             "bindings": {
                 "valueText": {
-                    "url": "$gDemoServerURL",
+                    "url": "CLEARBLADE-IOT-SERVER",
                     "cache": "ClearBladeCache",
                     "table": "current",
                     "value": "measurement;plant_name;metric_name;unit",
@@ -506,7 +503,7 @@
             "bgBorderVisible": true,
             "bindings": {
                 "valueText": {
-                    "url": "$gDemoServerURL",
+                    "url": "CLEARBLADE-IOT-SERVER",
                     "cache": "ClearBladeCache",
                     "table": "current",
                     "value": "measurement;plant_name;metric_name;unit",
@@ -613,7 +610,7 @@
             "bgBorderVisible": true,
             "bindings": {
                 "valueText": {
-                    "url": "$gDemoServerURL",
+                    "url": "CLEARBLADE-IOT-SERVER",
                     "cache": "ClearBladeCache",
                     "table": "current",
                     "value": "measurement;plant_name;metric_name;unit",
@@ -654,7 +651,7 @@
             "bgBorderVisible": true,
             "bindings": {
                 "valueText": {
-                    "url": "$gDemoServerURL",
+                    "url": "CLEARBLADE-IOT-SERVER",
                     "cache": "ClearBladeCache",
                     "table": "current",
                     "value": "measurement;plant_name;metric_name;unit",
@@ -695,7 +692,7 @@
             "bgBorderVisible": true,
             "bindings": {
                 "valueText": {
-                    "url": "$gDemoServerURL",
+                    "url": "CLEARBLADE-IOT-SERVER",
                     "cache": "ClearBladeCache",
                     "table": "current",
                     "value": "measurement;plant_name;metric_name;unit",
@@ -736,7 +733,7 @@
             "bgBorderVisible": true,
             "bindings": {
                 "valueText": {
-                    "url": "$gDemoServerURL",
+                    "url": "CLEARBLADE-IOT-SERVER",
                     "cache": "ClearBladeCache",
                     "table": "current",
                     "value": "measurement;plant_name;metric_name;unit",
@@ -970,7 +967,7 @@
             "category": "extern-cachectrl2",
             "bgVisible": true,
             "size": "270 40",
-            "server": "$gDemoServerURL",
+            "server": "CLEARBLADE-IOT-SERVER",
             "cache": "ClearBladeCache",
             "autoSelect": true,
             "setGlobals": true,
