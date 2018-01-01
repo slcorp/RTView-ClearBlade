@@ -116,14 +116,14 @@ Unzip the RTViewDataServer-Mini.zip using your favorite zip/unzip utility.
 * Click on the Add Server button.
 
 * For Name, type:
-LOCAL-DEMO-SERVER
+CLEARBLADE-IOT-SERVER
 
 * For Host/URL, type:
 http://localhost:3270/rtvquery
 
 * Click on Save Added Servers.
 
-* To test the connection, click on the green magnifying glass next to the LOCAL-DEMO-SERVER.
+* To test the connection, click on the green magnifying glass next to the CLEARBLADE-IOT-SERVER.
 	This will bring up the RTView DataServer - Cache Tables dialog.
 	You should see "Connected" under Connection Status. 
 	You should also see the ClearBladeCache in the CacheTable.
@@ -165,17 +165,17 @@ We have set up an instance in the Amazon cloud, dedicated to providing data for 
 	This will take you to the RTData Server List page in which you will create a connection 
 	to your RTView data server.
 	
-* Click on the Add Server button.
+* Click on the Add Server button. If you have already created a data server connection, named CLEARBLADE-IOT-SERVER in the previous section, simply edit the existing entry.
 
 * For Name, type:
-IOT-DEMO-SERVER
+CLEARBLADE-IOT-SERVER
 
 * For Host/URL, type:
 http://iot-demo-server.slsandbox.com/rtvquery
 
 * Click on Save Added Servers.
 
-* To test the connection, click on the green magnifying glass next to the IOT-DEMO-SERVER.
+* To test the connection, click on the green magnifying glass next to the CLEARBLADE-IOT-SERVER.
 	This will bring up the RTView DataServer - Cache Tables dialog.
 	You should see "Connected" under Connection Status. 
 	You should also see the ClearBladeCache in the CacheTable.
@@ -203,18 +203,8 @@ http://iot-demo-server.slsandbox.com/rtvquery
 * Double click on cb_mixing_plants.
 
 	This will load the cb_mixing_plants display into the editor. 
-	
-* Click on Options in the menu.
-
-* Click on Variables ….
-
-	This will bring up the VARIABLES dialog.
-	
-* Change the LOCAL-DEMO-SERVER to IOT-DEMO-SERVER for gDemoServerURL.
-
-* Click OK.
-
-	This will connect your display to SL RTView's IoT data server that is running on an Amazon instance. 
+	If your backend data server is active, this will connect your display to 
+	SL RTView's ClearBlade IoT data server that is running on an Amazon instance. 
 
 
 **_Feel free to experiment with this project, modify it, enhance it and share your experience, comments, suggestions and/or enhancements with us._**
