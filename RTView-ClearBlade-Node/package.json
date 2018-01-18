@@ -8,7 +8,6 @@
     "rtview"
   ],
   "homepage": "http://www.sl.com",
-
   "main": "rtview_clearblade_feed.js",
   "engines": [
     "node"
