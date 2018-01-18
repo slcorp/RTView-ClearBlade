@@ -344,19 +344,16 @@ function messageReceivedCb10 (message) {
     send(targetPostStr, cacheName, clmetadata, data10);    
 }
 
-// Define the cache structure
-cachedef_metadata = [
-    { "name": "propName", "type": "string" },
-    { "name": "propValue", "type":"string" }
-]; 
-cachedef_data = [
-    { "propName": "indexColumnNames", "propValue": "plant_name;plant_id;metric_name" },
-    { "propName": "historyColumnNames", "propValue": "measurement;unit" },
-    { "propName": "compactionRules", "propValue": "- " }
-];
-send(targetCommandStr, 'replace/' + cacheName, cachedef_metadata, cachedef_data);
+// Specific cache definition for sample data table
+cachedef_clearblade = {
+    "indexColumnNames": "plant_name;plant_id;metric_name",
+    "historyColumnNames": "measurement;unit",
+    "compactionRules": "- "
+}
 
-// metadata for the ClearBlade data           
+datacache_create(cacheName, cachedef_clearblade);
+
+// Specific metadata for the sample data           
 var clmetadata = [
     { "name" : "plant_name", "type" : "string" },
     { "name" : "plant_id", "type" : "string" },
@@ -364,6 +361,26 @@ var clmetadata = [
     { "name" : "measurement", "type" : "double" },
     { "name" : "unit", "type" : "string" }
 ];
+
+// ###################################################
+// RTView Utility Functions
+
+// Create a named data cache with the specified properties.
+function datacache_create (cacheName, properties) {
+
+    if (properties === null)
+        return;
+        
+    cachedef_metadata = [ { "name":"propName", "type":"string" },{ "name":"propValue", "type":"string" } ];  
+    cachedef_data = []
+    for (var propName in properties) {
+        cachedef_data.push( { 'propName': propName, 'propValue': properties[propName] } );
+    }
+    console.log('cachedef_data = ' + JSON.stringify(cachedef_data));
+    send(targetCommandStr, 'replace/' + cacheName, cachedef_metadata, cachedef_data);
+}
+
+// Post a command orblock of data to RTView
 
 var attempts = 0;
 var error_count = 0;
