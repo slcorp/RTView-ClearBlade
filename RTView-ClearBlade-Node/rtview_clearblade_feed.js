@@ -376,7 +376,6 @@ function datacache_create (cacheName, properties) {
     for (var propName in properties) {
         cachedef_data.push( { 'propName': propName, 'propValue': properties[propName] } );
     }
-    console.log('cachedef_data = ' + JSON.stringify(cachedef_data));
     send(targetCommandStr, 'replace/' + cacheName, cachedef_metadata, cachedef_data);
 }
 
