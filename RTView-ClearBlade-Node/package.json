@@ -1,5 +1,5 @@
 {
-  "name": "subscribeThenUnsubscribe",
+  "name": "rtview_clearblade_feed",
   "version": "1.0.0",
   "description": "Node client that subscribes to ClearBlade demo data and pushes it to RTView Data Server",
   "keywords": [
@@ -9,7 +9,7 @@
   ],
   "homepage": "http://www.sl.com",
 
-  "main": "subscribeThenUnsubscribe.js",
+  "main": "rtview_clearblade_feed.js",
   "engines": [
     "node"
   ],
