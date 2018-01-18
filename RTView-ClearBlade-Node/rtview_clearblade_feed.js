@@ -345,13 +345,11 @@ function messageReceivedCb10 (message) {
 }
 
 // Specific cache definition for sample data table
-cachedef_clearblade = {
+datacache_create(cacheName, {
     "indexColumnNames": "plant_name;plant_id;metric_name",
     "historyColumnNames": "measurement;unit",
     "compactionRules": "- "
-}
-
-datacache_create(cacheName, cachedef_clearblade);
+});
 
 // Specific metadata for the sample data           
 var clmetadata = [
