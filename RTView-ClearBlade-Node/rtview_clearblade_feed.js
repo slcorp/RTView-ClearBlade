@@ -1,18 +1,18 @@
-const constants = require("./constants.json");
-//const ClearBlade = require("ClearBlade"); The folder name under node_modules is all lower case
+// *********************************************************
+// RTView - ClearBlade Sample Program
+
 const ClearBlade = require("clearblade");
-//console.log('const', constants);
+const constants = require("./constants.json");
 
 var request = require('request');
 
+// URL of RTView DataServer http port
 var targetURL = 'http://localhost:3275';
-//var cacheName = 'CBPlantData';
-var cacheName = 'ClearBladeCache';
- 
 var targetPostStr = targetURL + '/rtview/json/data/'
 var targetCommandStr = targetURL + '/rtview/json/cache_processor/'
 
-console.log("target post string = "  + targetPostStr);
+// Name of the cache created in this demo
+var cacheName = 'ClearBladeCache';
 
 var messaging1;
 var messaging2;
@@ -36,6 +36,7 @@ var TOPIC_NAME8 = "MixingPlant/A/CombustionAirTemp";
 var TOPIC_NAME9 = "MixingPlant/A/HeatingAggregateTemp";
 var TOPIC_NAME10 = "MixingPlant/A/EntryAggregateTemp";
 
+// Initialize connection to ClearBlade
 ClearBlade.init({
 	email: "sl@clearblade.com",
 	password: "password",
@@ -46,6 +47,7 @@ ClearBlade.init({
 	callback: initCb
 })
 
+// Setup subscriptions to multiple topics
 function initCb (err, body) {
 	if (err) {
 		console.error("init error", body);
@@ -60,7 +62,6 @@ function initCb (err, body) {
         messaging8 = ClearBlade.Messaging({}, messageInit8);
         messaging9 = ClearBlade.Messaging({}, messageInit9);
         messaging10 = ClearBlade.Messaging({}, messageInit10);
-
 	}
 }
 
@@ -124,17 +125,17 @@ function messageReceivedCb1 (message) {
     data1.measurement=obj1.measurement;
     data1.unit=obj1.unit;
     //console.log('data1=' + JSON.stringify(data1));
-    send(targetPostStr, cacheName, clmetadata, data1);
+    datatable_send(cacheName, clmetadata, data1);
     
     // Simulate data for Plant B
     data1.plant_id='B';
     data1.measurement=obj1.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data1);
+    datatable_send(cacheName, clmetadata, data1);
     
     // Simulate data for Plant C
     data1.plant_id='C';
     data1.measurement=obj1.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data1);    
+    datatable_send(cacheName, clmetadata, data1);    
 }
 
 function messageReceivedCb2 (message) {
@@ -147,17 +148,17 @@ function messageReceivedCb2 (message) {
     data2.measurement=obj2.measurement;
     data2.unit=obj2.unit;
     //console.log('data2=' + JSON.stringify(data2));
-    send(targetPostStr, cacheName, clmetadata, data2);
+    datatable_send(cacheName, clmetadata, data2);
     
     // Simulate data for Plant B
     data2.plant_id='B';
     data2.measurement=obj2.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data2);
+    datatable_send(cacheName, clmetadata, data2);
     
     // Simulate data for Plant C
     data2.plant_id='C';
     data2.measurement=obj2.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data2);    
+    datatable_send(cacheName, clmetadata, data2);    
 }
 
 function messageReceivedCb3 (message) {
@@ -170,17 +171,17 @@ function messageReceivedCb3 (message) {
     data3.measurement=obj3.measurement;
     data3.unit=obj3.unit;
     //console.log('data3=' + JSON.stringify(data3));
-    send(targetPostStr, cacheName, clmetadata, data3);
+    datatable_send(cacheName, clmetadata, data3);
     
     // Simulate data for Plant B
     data3.plant_id='B';
     data3.measurement=obj3.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data3);
+    datatable_send(cacheName, clmetadata, data3);
     
     // Simulate data for Plant C
     data3.plant_id='C';
     data3.measurement=obj3.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data3);    
+    datatable_send(cacheName, clmetadata, data3);    
 }
 
 function messageReceivedCb4 (message) {
@@ -193,17 +194,17 @@ function messageReceivedCb4 (message) {
     data4.measurement=obj4.measurement;
     data4.unit=obj4.unit;
     //console.log('data4=' + JSON.stringify(data4));
-    send(targetPostStr, cacheName, clmetadata, data4);
+    datatable_send(cacheName, clmetadata, data4);
     
     // Simulate data for Plant B
     data4.plant_id='B';
     data4.measurement=obj4.measurement + randomIntInc(-200,200);
-    send(targetPostStr, cacheName, clmetadata, data4);
+    datatable_send(cacheName, clmetadata, data4);
     
     // Simulate data for Plant C
     data4.plant_id='C';
     data4.measurement=obj4.measurement + randomIntInc(-200,200);
-    send(targetPostStr, cacheName, clmetadata, data4);    
+    datatable_send(cacheName, clmetadata, data4);    
 }
 
 function messageReceivedCb5 (message) {
@@ -216,17 +217,17 @@ function messageReceivedCb5 (message) {
     data5.measurement=obj5.measurement;
     data5.unit=obj5.unit;
     //console.log('data5=' + JSON.stringify(data5));
-    send(targetPostStr, cacheName, clmetadata, data5);
+    datatable_send(cacheName, clmetadata, data5);
     
     // Simulate data for Plant B
     data5.plant_id='B';
     data5.measurement=obj5.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data5);
+    datatable_send(cacheName, clmetadata, data5);
     
     // Simulate data for Plant C
     data5.plant_id='C';
     data5.measurement=obj5.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data5);    
+    datatable_send(cacheName, clmetadata, data5);    
 }
 
 function messageReceivedCb6 (message) {
@@ -239,17 +240,17 @@ function messageReceivedCb6 (message) {
     data6.measurement=obj6.measurement;
     data6.unit=obj6.unit;
     //console.log('data6=' + JSON.stringify(data6));
-    send(targetPostStr, cacheName, clmetadata, data6);
+    datatable_send(cacheName, clmetadata, data6);
     
     // Simulate data for Plant B
     data6.plant_id='B';
     data6.measurement=obj6.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data6);
+    datatable_send(cacheName, clmetadata, data6);
     
     // Simulate data for Plant C
     data6.plant_id='C';
     data6.measurement=obj6.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data6);    
+    datatable_send(cacheName, clmetadata, data6);    
 }
 
 function messageReceivedCb7 (message) {
@@ -262,17 +263,17 @@ function messageReceivedCb7 (message) {
     data7.measurement=obj7.measurement;
     data7.unit=obj7.unit;
     //console.log('data7=' + JSON.stringify(data7));
-    send(targetPostStr, cacheName, clmetadata, data7);
+    datatable_send(cacheName, clmetadata, data7);
     
     // Simulate data for Plant B
     data7.plant_id='B';
     data7.measurement=obj7.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data7);
+    datatable_send(cacheName, clmetadata, data7);
     
     // Simulate data for Plant C
     data7.plant_id='C';
     data7.measurement=obj7.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data7);    
+    datatable_send(cacheName, clmetadata, data7);    
 }
 
 function messageReceivedCb8 (message) {
@@ -285,17 +286,17 @@ function messageReceivedCb8 (message) {
     data8.measurement=obj8.measurement;
     data8.unit=obj8.unit;
     //console.log('data8=' + JSON.stringify(data8));
-    send(targetPostStr, cacheName, clmetadata, data8);
+    datatable_send(cacheName, clmetadata, data8);
     
     // Simulate data for Plant B
     data8.plant_id='B';
     data8.measurement=obj8.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data8);
+    datatable_send(cacheName, clmetadata, data8);
     
     // Simulate data for Plant C
     data8.plant_id='C';
     data8.measurement=obj8.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data8);    
+    datatable_send(cacheName, clmetadata, data8);    
 }
 
 function messageReceivedCb9 (message) {
@@ -308,17 +309,17 @@ function messageReceivedCb9 (message) {
     data9.measurement=obj9.measurement;
     data9.unit=obj9.unit;
     //console.log('data9=' + JSON.stringify(data9));
-    send(targetPostStr, cacheName, clmetadata, data9);
+    datatable_send(cacheName, clmetadata, data9);
     
     // Simulate data for Plant B
     data9.plant_id='B';
     data9.measurement=obj9.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data9);
+    datatable_send(cacheName, clmetadata, data9);
     
     // Simulate data for Plant C
     data9.plant_id='C';
     data9.measurement=obj9.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data9);    
+    datatable_send(cacheName, clmetadata, data9);    
 }
 
 function messageReceivedCb10 (message) {
@@ -331,17 +332,21 @@ function messageReceivedCb10 (message) {
     data10.measurement=obj10.measurement;
     data10.unit=obj10.unit;
     //console.log('data10=' + JSON.stringify(data10));
-    send(targetPostStr, cacheName, clmetadata, data10);
+    datatable_send(cacheName, clmetadata, data10);
     
     // Simulate data for Plant B
     data10.plant_id='B';
     data10.measurement=obj10.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data10);
+    datatable_send(cacheName, clmetadata, data10);
     
     // Simulate data for Plant C
     data10.plant_id='C';
     data10.measurement=obj10.measurement + randomIntInc(-50,50);
-    send(targetPostStr, cacheName, clmetadata, data10);    
+    datatable_send(cacheName, clmetadata, data10);  
+}
+
+function randomIntInc (low, high) {
+    return Math.floor(Math.random() * (high - low + 1) + low);
 }
 
 // Specific cache definition for sample data table
@@ -351,13 +356,13 @@ datacache_create(cacheName, {
     "compactionRules": "- "
 });
 
-// Specific metadata for the sample data           
+// Specific metadata for the sample data    
 var clmetadata = [
-    { "name" : "plant_name", "type" : "string" },
-    { "name" : "plant_id", "type" : "string" },
-    { "name" : "metric_name", "type" : "string" },
-    { "name" : "measurement", "type" : "double" },
-    { "name" : "unit", "type" : "string" }
+    { "plant_name": "string" },
+    { "plant_id": "string" },
+    { "metric_name": "string" },
+    { "measurement": "double" },
+    { "unit": "string" }
 ];
 
 // ###################################################
@@ -374,25 +379,34 @@ function datacache_create (cacheName, properties) {
     for (var propName in properties) {
         cachedef_data.push( { 'propName': propName, 'propValue': properties[propName] } );
     }
-    send(targetCommandStr, 'replace/' + cacheName, cachedef_metadata, cachedef_data);
+    send_to_rtview(targetCommandStr, 'replace/' + cacheName, cachedef_metadata, cachedef_data);
 }
 
-// Post a command orblock of data to RTView
+// Send a block of data to RTView
+function datatable_send (cacheName, metadata, data) {
+    if (data == null) return;
+    if (metadata == null || metadata.length < 1) return;
+    metadata2 = []
+    for (var i = 0; i < metadata.length; i++) {
+        for (var colName in metadata[i]) {
+            metadata2.push( { "name": colName, "type": metadata[i][colName] } )
+        }
+    }
+    send_to_rtview(targetPostStr, cacheName, metadata2, data);
+}
 
 var attempts = 0;
 var error_count = 0;
 var start = new Date().getTime();
-         
-function send(url, cacheName, metadata, body) {
 
+// Post a command or block of data to an RTView DataServer at given URL    
+function send_to_rtview(url, cacheName, metadata, body) {
     if (body === null)
         return;
 
-	//console.log('metadata = ' + JSON.stringify(metadata));
 	console.log('data = ' + JSON.stringify(body));
 
 	var objArray = [];
-
 	if(Array.isArray(body))
 		objArray = body;
 	else
@@ -415,7 +429,7 @@ function send(url, cacheName, metadata, body) {
 			error_count += 1;
 			if (error.code == "ECONNREFUSED") {
 				var send_rate = 1000*attempts/(end-start);
-				console.log('RTView refused connection');
+				console.log('ERROR: RTView connection refused.');
 				g_showErrConnMsg = false;   
 			} else {
 				console.log("RTView: %s", error);
@@ -424,8 +438,4 @@ function send(url, cacheName, metadata, body) {
 			g_showErrConnMsg = true;      // reset
 		}
 	}); 
-}
-
-function randomIntInc (low, high) {
-    return Math.floor(Math.random() * (high - low + 1) + low);
 }
