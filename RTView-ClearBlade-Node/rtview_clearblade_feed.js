@@ -370,10 +370,7 @@ var clmetadata = [
 
 // Create a named data cache with the specified properties.
 function datacache_create (cacheName, properties) {
-
-    if (properties === null)
-        return;
-        
+    if (properties === null) return;     
     cachedef_metadata = [ { "name":"propName", "type":"string" },{ "name":"propValue", "type":"string" } ];  
     cachedef_data = []
     for (var propName in properties) {
@@ -401,11 +398,8 @@ var start = new Date().getTime();
 
 // Post a command or block of data to an RTView DataServer at given URL    
 function send_to_rtview(url, cacheName, metadata, body) {
-    if (body === null)
-        return;
-
+    if (body === null) return;
 	console.log('data = ' + JSON.stringify(body));
-
 	var objArray = [];
 	if(Array.isArray(body))
 		objArray = body;
@@ -418,10 +412,7 @@ function send_to_rtview(url, cacheName, metadata, body) {
 		qs: qsStr,                    // Query string data
 		method: 'POST',
 		timeout: 5000,
-		json: { 
-			metadata: metadata,
-			data: objArray
-		}
+		json: { metadata: metadata, data: objArray }
 	}, function(error, response, body){
 		var end = new Date().getTime();
 		attempts += 1;
