@@ -8,6 +8,8 @@ var request = require('request');
 
 // URL of RTView DataServer http port
 var targetURL = 'http://localhost:3275';
+//var targetURL = 'http://localhost:3270/rtvpost';  // to use servlet instead of port
+
 var targetPostStr = targetURL + '/rtview/json/data/'
 var targetCommandStr = targetURL + '/rtview/json/cache_processor/'
 
