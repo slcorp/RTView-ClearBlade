@@ -352,8 +352,7 @@ function randomIntInc (low, high) {
 // Specific cache definition for sample data table
 datacache_create(cacheName, {
     "indexColumnNames": "plant_name;plant_id;metric_name",
-    "historyColumnNames": "measurement;unit",
-    "compactionRules": "- "
+    "historyColumnNames": "measurement;unit"
 });
 
 // Specific metadata for the sample data    
