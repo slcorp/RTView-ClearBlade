@@ -127,17 +127,17 @@ function messageReceivedCb1 (message) {
     data1.measurement=obj1.measurement;
     data1.unit=obj1.unit;
     //console.log('data1=' + JSON.stringify(data1));
-    datatable_send(cacheName, clmetadata, data1);
+    datatable_send(cacheName, data1);
     
     // Simulate data for Plant B
     data1.plant_id='B';
     data1.measurement=obj1.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data1);
+    datatable_send(cacheName, data1);
     
     // Simulate data for Plant C
     data1.plant_id='C';
     data1.measurement=obj1.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data1);    
+    datatable_send(cacheName, data1);    
 }
 
 function messageReceivedCb2 (message) {
@@ -150,17 +150,17 @@ function messageReceivedCb2 (message) {
     data2.measurement=obj2.measurement;
     data2.unit=obj2.unit;
     //console.log('data2=' + JSON.stringify(data2));
-    datatable_send(cacheName, clmetadata, data2);
+    datatable_send(cacheName, data2);
     
     // Simulate data for Plant B
     data2.plant_id='B';
     data2.measurement=obj2.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data2);
+    datatable_send(cacheName, data2);
     
     // Simulate data for Plant C
     data2.plant_id='C';
     data2.measurement=obj2.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data2);    
+    datatable_send(cacheName, data2);    
 }
 
 function messageReceivedCb3 (message) {
@@ -173,17 +173,17 @@ function messageReceivedCb3 (message) {
     data3.measurement=obj3.measurement;
     data3.unit=obj3.unit;
     //console.log('data3=' + JSON.stringify(data3));
-    datatable_send(cacheName, clmetadata, data3);
+    datatable_send(cacheName, data3);
     
     // Simulate data for Plant B
     data3.plant_id='B';
     data3.measurement=obj3.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data3);
+    datatable_send(cacheName, data3);
     
     // Simulate data for Plant C
     data3.plant_id='C';
     data3.measurement=obj3.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data3);    
+    datatable_send(cacheName, data3);    
 }
 
 function messageReceivedCb4 (message) {
@@ -196,17 +196,17 @@ function messageReceivedCb4 (message) {
     data4.measurement=obj4.measurement;
     data4.unit=obj4.unit;
     //console.log('data4=' + JSON.stringify(data4));
-    datatable_send(cacheName, clmetadata, data4);
+    datatable_send(cacheName, data4);
     
     // Simulate data for Plant B
     data4.plant_id='B';
     data4.measurement=obj4.measurement + randomIntInc(-200,200);
-    datatable_send(cacheName, clmetadata, data4);
+    datatable_send(cacheName, data4);
     
     // Simulate data for Plant C
     data4.plant_id='C';
     data4.measurement=obj4.measurement + randomIntInc(-200,200);
-    datatable_send(cacheName, clmetadata, data4);    
+    datatable_send(cacheName, data4);    
 }
 
 function messageReceivedCb5 (message) {
@@ -219,17 +219,17 @@ function messageReceivedCb5 (message) {
     data5.measurement=obj5.measurement;
     data5.unit=obj5.unit;
     //console.log('data5=' + JSON.stringify(data5));
-    datatable_send(cacheName, clmetadata, data5);
+    datatable_send(cacheName, data5);
     
     // Simulate data for Plant B
     data5.plant_id='B';
     data5.measurement=obj5.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data5);
+    datatable_send(cacheName, data5);
     
     // Simulate data for Plant C
     data5.plant_id='C';
     data5.measurement=obj5.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data5);    
+    datatable_send(cacheName, data5);    
 }
 
 function messageReceivedCb6 (message) {
@@ -242,17 +242,17 @@ function messageReceivedCb6 (message) {
     data6.measurement=obj6.measurement;
     data6.unit=obj6.unit;
     //console.log('data6=' + JSON.stringify(data6));
-    datatable_send(cacheName, clmetadata, data6);
+    datatable_send(cacheName, data6);
     
     // Simulate data for Plant B
     data6.plant_id='B';
     data6.measurement=obj6.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data6);
+    datatable_send(cacheName, data6);
     
     // Simulate data for Plant C
     data6.plant_id='C';
     data6.measurement=obj6.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data6);    
+    datatable_send(cacheName, data6);    
 }
 
 function messageReceivedCb7 (message) {
@@ -265,17 +265,17 @@ function messageReceivedCb7 (message) {
     data7.measurement=obj7.measurement;
     data7.unit=obj7.unit;
     //console.log('data7=' + JSON.stringify(data7));
-    datatable_send(cacheName, clmetadata, data7);
+    datatable_send(cacheName, data7);
     
     // Simulate data for Plant B
     data7.plant_id='B';
     data7.measurement=obj7.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data7);
+    datatable_send(cacheName, data7);
     
     // Simulate data for Plant C
     data7.plant_id='C';
     data7.measurement=obj7.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data7);    
+    datatable_send(cacheName, data7);    
 }
 
 function messageReceivedCb8 (message) {
@@ -288,17 +288,17 @@ function messageReceivedCb8 (message) {
     data8.measurement=obj8.measurement;
     data8.unit=obj8.unit;
     //console.log('data8=' + JSON.stringify(data8));
-    datatable_send(cacheName, clmetadata, data8);
+    datatable_send(cacheName, data8);
     
     // Simulate data for Plant B
     data8.plant_id='B';
     data8.measurement=obj8.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data8);
+    datatable_send(cacheName, data8);
     
     // Simulate data for Plant C
     data8.plant_id='C';
     data8.measurement=obj8.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data8);    
+    datatable_send(cacheName, data8);    
 }
 
 function messageReceivedCb9 (message) {
@@ -311,17 +311,17 @@ function messageReceivedCb9 (message) {
     data9.measurement=obj9.measurement;
     data9.unit=obj9.unit;
     //console.log('data9=' + JSON.stringify(data9));
-    datatable_send(cacheName, clmetadata, data9);
+    datatable_send(cacheName, data9);
     
     // Simulate data for Plant B
     data9.plant_id='B';
     data9.measurement=obj9.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data9);
+    datatable_send(cacheName, data9);
     
     // Simulate data for Plant C
     data9.plant_id='C';
     data9.measurement=obj9.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data9);    
+    datatable_send(cacheName, data9);    
 }
 
 function messageReceivedCb10 (message) {
@@ -334,17 +334,17 @@ function messageReceivedCb10 (message) {
     data10.measurement=obj10.measurement;
     data10.unit=obj10.unit;
     //console.log('data10=' + JSON.stringify(data10));
-    datatable_send(cacheName, clmetadata, data10);
+    datatable_send(cacheName, data10);
     
     // Simulate data for Plant B
     data10.plant_id='B';
     data10.measurement=obj10.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data10);
+    datatable_send(cacheName, data10);
     
     // Simulate data for Plant C
     data10.plant_id='C';
     data10.measurement=obj10.measurement + randomIntInc(-50,50);
-    datatable_send(cacheName, clmetadata, data10);  
+    datatable_send(cacheName, data10);  
 }
 
 function randomIntInc (low, high) {
@@ -354,37 +354,38 @@ function randomIntInc (low, high) {
 // Specific cache definition for sample data table
 // Note: This is only called once on startup. 
 // If data server is not running, cache will not be created correctly.
-datacache_create(cacheName, {
+datacache_create(cacheName,
+{   // cache properties
     "indexColumnNames": "plant_name;plant_id;metric_name",
     "historyColumnNames": "measurement;unit"
-});
-
-// Specific metadata for the sample data    
-var clmetadata = [
+},[ // column metadata
     { "plant_name": "string" },
     { "plant_id": "string" },
     { "metric_name": "string" },
     { "measurement": "double" },
     { "unit": "string" }
-];
+]);
 
 // ###################################################
 // RTView Utility Functions
 
 // Create a named data cache with the specified properties.
-function datacache_create (cacheName, properties) {
+function datacache_create (cacheName, properties, metadata) {
     if (properties === null) return;     
     cachedef_metadata = [ { "name":"propName", "type":"string" },{ "name":"propValue", "type":"string" } ];  
     cachedef_data = []
     for (var propName in properties) {
         cachedef_data.push( { 'propName': propName, 'propValue': properties[propName] } );
     }
-    send_to_rtview(targetCommandStr, 'replace/' + cacheName, cachedef_metadata, cachedef_data);
+    send_to_rtview(targetCommandStr, 'replace/' + cacheName, cachedef_metadata, cachedef_data);   
+    if (metadataMap === undefined) metadataMap = {};
+    metadataMap[cacheName] = metadata;
 }
 
-// Send a block of data to RTView
-function datatable_send (cacheName, metadata, data) {
-    if (data == null) return;
+// Send a block of data to RTView cache
+function datatable_send (cacheName, data) {
+    if (data == null) data = [];
+    metadata = metadataMap[cacheName]
     if (metadata == null || metadata.length < 1) return;
     metadata2 = []
     for (var i = 0; i < metadata.length; i++) {
@@ -392,9 +393,11 @@ function datatable_send (cacheName, metadata, data) {
             metadata2.push( { "name": colName, "type": metadata[i][colName] } )
         }
     }
+    console.log('... sending: ' + JSON.stringify(data));
     send_to_rtview(targetPostStr, cacheName, metadata2, data);
 }
 
+var metadataMap;
 var attempts = 0;
 var error_count = 0;
 var start = new Date().getTime();
