@@ -350,6 +350,8 @@ function randomIntInc (low, high) {
 }
 
 // Specific cache definition for sample data table
+// Note: This is only called once on startup. 
+// If data server is not running, cache will not be created correctly.
 datacache_create(cacheName, {
     "indexColumnNames": "plant_name;plant_id;metric_name",
     "historyColumnNames": "measurement;unit"
