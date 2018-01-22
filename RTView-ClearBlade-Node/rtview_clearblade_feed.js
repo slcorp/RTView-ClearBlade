@@ -139,7 +139,6 @@ function message_create (obj, count) {
     data.plant_id='C';
     data.measurement=obj.measurement + randomIntInc(-50,50);
     datatable_send(cacheName, data);    
-    
 }
 
 function randomIntInc (low, high) {
