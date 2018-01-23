@@ -9,36 +9,13 @@ By following the steps, described below, you will be:
 * Viewing preexisting displays, populated by data, coming via a servlet within RTView, through your free trial account on RTViewCloud.
 
 
-## Goals
-RTView-ClearBlade demo will: 
-* Show how easy it is to display ClearBlade topics in graphical and highly configurable displays in the Cloud.
-* Convey the structure of the node script, needed to send data to RTView, which subscribes to topics of interest.
-* Allow the users to enhance the existing RTView displays or create new ones.
-
-
-## Prerequisites
-
-### Hardware Requirements
-A computer with:
-* 2.8 GHz Core 2 Duo equivalent or faster
-* 30 MB disk space for installation
-* 2 GB Memory
-
-
 ### Software Requirements
 A computer with:
 * Node.js Version 6.9.0 or newer
-
-* Google Chrome 57.x+
-or
-* Microsoft Internet Explorer 11.x, Edge
-or
-* Mozilla Firefox 50.x+
-
+* A browser of your choice (e.g. Google Chrome 57.x+, MS IE 11.x+, MS Edge, or Mozilla Firefox 50.x+)
 * RTViewDataServer-Mini package (a zip file, which will be available through SL Corporation)
 * RTView-ClearBlade-Displays package (a directory, which is available through GitHub)
 * RTView-ClearBlade-Node package (a directory, which is available through GitHub)
-
 * A free trial subscription to RTViewCloud services
 
 
@@ -207,4 +184,11 @@ http://clearblade-iot-server.slsandbox.com/rtvquery
 	SL RTView's ClearBlade IoT data server that is running on an Amazon instance. 
 
 
+## Achieved Goals
+RTView-ClearBlade demo should have : 
+* Shown how easy it is to display ClearBlade topics in graphical and highly configurable displays in the Cloud.
+* Conveyed the structure of the node script, needed to send data to RTView, which subscribes to topics of interest.
+* Allowed the users to enhance the existing RTView displays or create new ones.
+
 **_Feel free to experiment with this project, modify it, enhance it and share your experience, comments, suggestions and/or enhancements with us._**
+
