@@ -89,13 +89,23 @@ function message_create_and_send (message, count) {
     rtview_utils.send_datatable(cacheName, data);
     
     // Simulate data for Plant B
+    data = {};
+    data.plant_name='MixingPlant';
     data.plant_id='B';
+    data.metric_name=topicsOfInterest[count].slice(14);
     data.measurement=obj.measurement + randomIntInc(-50,50);
+    data.unit=obj.unit;
+    console.log('... sending: ' + JSON.stringify(data));
     rtview_utils.send_datatable(cacheName, data);
     
     // Simulate data for Plant C
+    data = {};
+    data.plant_name='MixingPlant';
     data.plant_id='C';
+    data.metric_name=topicsOfInterest[count].slice(14);
     data.measurement=obj.measurement + randomIntInc(-50,50);
+    data.unit=obj.unit;
+    console.log('... sending: ' + JSON.stringify(data));
     rtview_utils.send_datatable(cacheName, data);    
 }
 
