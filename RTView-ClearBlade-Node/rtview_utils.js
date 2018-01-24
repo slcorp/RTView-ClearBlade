@@ -13,10 +13,29 @@ var targetCommandStr = targetURL + '/rtview/json/cache_processor/'
 // #########################################################
 // RTView Utility Functions
 
+var cacheMap = {};
+var metadataMap = {};
+var bufferMap = {};
+var batchSize = 12;
+var timerIinterval = 7000;
+
+var attempts = 0;
+var error_count = 0;
+var start = new Date().getTime();
+
 // Assign RTView Target URL
 function set_targeturl (url) {
     targetURL = url;
 }
+// Set Batch Size
+function set_batchsize (size) {
+    batchSize = size;
+}
+// Set Timer Interval
+function set_interval (interval) {
+    timerIinterval = interval;
+}
+
 // Create a named data cache with the specified properties.
 function create_datacache (cacheName, properties, metadata) {
     if (properties === null) return;     
@@ -25,15 +44,43 @@ function create_datacache (cacheName, properties, metadata) {
     for (var propName in properties) {
         cachedef_data.push( { 'propName': propName, 'propValue': properties[propName] } );
     }
-    send_to_rtview(targetCommandStr, 'replace/' + cacheName, cachedef_metadata, cachedef_data);   
-    if (metadataMap === undefined) metadataMap = {};
-    metadataMap[cacheName] = metadata;
+    send_to_rtview(targetCommandStr, 'replace/' + cacheName, cachedef_metadata, cachedef_data);    
+    metadataMap[cacheName] = metadata;  
+    bufferMap[cacheName] = [];
+    cacheMap[cacheName] = cacheName;
 }
 
 // Send a block of data to RTView cache
 function send_datatable (cacheName, data) {
     if (data == null) data = [];
-    metadata = metadataMap[cacheName]
+    buffer = bufferMap[cacheName]
+    
+    //send_to_rtview(targetPostStr, cacheName, metadata2, data);
+    console.log('... data row = ' + JSON.stringify(data));
+    buffer.push(data);
+    if (buffer.length >= batchSize) {
+        /*
+        metadata = metadataMap[cacheName]
+        if (metadata == null || metadata.length < 1) return;
+        metadata2 = []
+        for (var i = 0; i < metadata.length; i++) {
+            for (var colName in metadata[i]) {
+                metadata2.push( { "name": colName, "type": metadata[i][colName] } )
+            }
+        }
+        
+        send_to_rtview(targetPostStr, cacheName, metadata2, buffer);
+        bufferMap[cacheName] = []
+        */
+        flush_buffer(cacheName);
+    } 
+    /*
+    */
+}
+
+function flush_buffer (cacheName) {
+    buffer = bufferMap[cacheName];
+    metadata = metadataMap[cacheName];
     if (metadata == null || metadata.length < 1) return;
     metadata2 = []
     for (var i = 0; i < metadata.length; i++) {
@@ -41,18 +88,15 @@ function send_datatable (cacheName, data) {
             metadata2.push( { "name": colName, "type": metadata[i][colName] } )
         }
     }
-    send_to_rtview(targetPostStr, cacheName, metadata2, data);
+    
+    send_to_rtview(targetPostStr, cacheName, metadata2, buffer);
+    bufferMap[cacheName] = []
 }
-
-var metadataMap;
-var attempts = 0;
-var error_count = 0;
-var start = new Date().getTime();
 
 // Post a command or block of data to an RTView DataServer at given URL    
 function send_to_rtview(url, cacheName, metadata, body) {
     if (body === null) return;
-	// console.log('data = ' + JSON.stringify(body));
+	console.log('data = ' + JSON.stringify(body));
 	var objArray = [];
 	if(Array.isArray(body))
 		objArray = body;
@@ -83,6 +127,20 @@ function send_to_rtview(url, cacheName, metadata, body) {
 		}
 	}); 
 }
+
+// On timer, flush all caches
+function rtviewTimerFunc () {
+    console.log('... timer fired')
+    //for (var i = 0; i < cacheMap.length; i++) {
+    for (var cacheName in cacheMap) {
+        //cacheName = cacheMap[i];
+        console.log('   .... cache: ' + cacheName);
+        flush_buffer(cacheName);
+    }
+}
+
+// Set timer to timer interval
+var rtviewTimer = setInterval(rtviewTimerFunc, timerIinterval);
 
 module.exports.set_targeturl = set_targeturl;
 module.exports.create_datacache = create_datacache;
