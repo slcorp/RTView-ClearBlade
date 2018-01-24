@@ -133,7 +133,7 @@ http://localhost:3270/rtvquery
 
 ## External Connection
 You do not have to setup a local RTView data server to see the RTView-ClearBlade displays populated. 
-We have set up an instance in the Amazon cloud, dedicated to providing data for everyone. An instance of the RTView data server  and node subscriber program are already running on it. We have named this instance the iot-demo-server. The steps, below, will walk you through connecting the RTView-ClearBlade displays to the iot-demo-server. You will need to get a free acccount on RTViewCloud, the steps for which, are described in the "Subscription, configuration and execution of the RTViewCloud Services" section, above.
+We have set up an instance in the Amazon cloud, dedicated to providing data for everyone. An instance of the RTView data server  and node subscriber program are already running on it. We have named this instance the clearblade-iot-server. The steps, below, will walk you through connecting the RTView-ClearBlade displays to the clearblade-iot-server. You will need to get a free acccount on RTViewCloud, the steps for which, are described in the "Subscription, configuration and execution of the RTViewCloud Services" section, above.
 
 ### Connecting the displays to RTView's IoT data server on Amazon Cloud
 
