@@ -6,7 +6,7 @@ This project provides tools and examples that demonstrate how RTView Cloud can b
 ![](Images/MixingPlantA.jpg)
 
 By following the steps, described below, you will be:
-* Installing and running an RTView data server on your local computer.
+* Installing and running an RTView data server on your local computer, which will allow you to store the streaming data and persist it, using RTView caches.
 * Installing and running a node script that subscribes to a few ClearBlade topics and pushes the data to the RTView data server.
 * Viewing preexisting displays, populated by data, coming via a servlet within RTView, through your free trial account on RTViewCloud.
 
@@ -72,7 +72,7 @@ Unzip the RTViewDataServer_xxx.zip using your favorite zip/unzip utility.
 
 ## Import and view the prebuilt RTView-ClearBlade displays
 
-* In a browser, go to [RTViewCloud](http://rtviewcloud.sl.
+* In a browser, go to [RTViewCloud](http://rtviewcloud.sl.com/).
 
 * On the top menu, click on Data.
 
