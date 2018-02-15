@@ -1,12 +1,13 @@
-**_WORK IN PROGRESS_**
-
-# RTView ClearBlade Demo
+# RTView ClearBlade Project
 
 ## Overview
+This project provides tools and examples that demonstrate how RTView Cloud can be used to display ClearBlade topics in graphical and highly configurable displays in the Cloud.
 By following the steps, described below, you will be:
 * Installing and running an RTView data server on your local computer.
 * Installing and running a node script that subscribes to a few ClearBlade topics and pushes the data to the RTView data server.
 * Viewing preexisting displays, populated by data, coming via a servlet within RTView, through your free trial account on RTViewCloud.
+
+![alt text](Images/MixingPlantA.jpg)
 
 
 ### Software Requirements
