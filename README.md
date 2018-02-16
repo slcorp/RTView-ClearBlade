@@ -1,63 +1,44 @@
 # RTView ClearBlade Project
 
 ## Overview
-This project provides tools and examples that demonstrate how RTView Cloud can be used to display ClearBlade topics in graphical and highly configurable displays in the Cloud.
+This project provides tools and examples that show how to use RTView Cloud with the ClearBlade Enterprise IoT Edge Platform to readily create and deploy rich graphical displays connected to real-time and historical ClearBlade data. 
 
 ![](Images/MixingPlantA.jpg)
 
-By following the steps, described below, you will be:
-* Installing and running an RTView data server on your local computer, which will allow you to store the incoming data and persist it, using RTView caches.
-* Installing and running a node script that subscribes to a few ClearBlade topics and pushes the data to the RTView data server.
-* Viewing preexisting displays, populated by data which is coming via a servlet within RTView, through your free trial account on RTViewCloud.
-
-
-### Requirements
-* A free RTViewCloud trial account
-* A copy of the RTViewDataServer package
-* A copy of the RTView-ClearBlade project from GitHub
-
+By following the steps described below you will:
+* Create an account on RTView Cloud
+* Download and run on your local computer an RTView DataServer, providing real-time data caching and historical archival
+* Run a Node.js connector program that subscribes to a few ClearBlade topics and populates the RTView DataServer
+* Import into RTView Cloud sample displays, showing in real-time the data coming from ClearBlade
 
 ## Create an RTView Cloud account
 
-* In a browser, go to [RTViewCloud](http://rtviewcloud.sl.com/).
-* Click on Start Free Trial and follow the process to get your free trial account.
-* Log in to your RTViewCloud account.
+* In a browser, go to [RTView Cloud](http://rtviewcloud.sl.com/).
+* Click on Start Free Trial to create your account (skip if you have an account already).
+* Login to your RTView Cloud account.
 
-	Notice that you are automatically in your own private organization (e.g. JohnSPrivateOrg).
-
+	Note that you are automatically in your own private organization (e.g. JohnSPrivateOrg).
 	
-## Download, configure and run the RTViewDataServer	
+## Download and run the RTView DataServer	
 
-* While in your RTViewCloud account, click on the ? icon on the top right corner of the RTView Cloud banner.
-* In the RTView Cloud Support Home screen, click on the Downloads box.
-* In the RTView Cloud Downloads screen, click on the Free Download button.
-* Follow the instructions and download a copy of RTViewDataServer to your computer.
-* On your computer, bring up a Command prompt.
-* Create a new top-level directory (e.g. rtvdemos)
+* From your RTView Cloud account, click on the ? icon at upper right to go to the Support page
+* Select Downloads and elect to download the RTView DataServer to your computer
+* Unzip the downloaded **RTViewDataServer_YYYYMMDD.zip** file to a directory of your choice
+* Open a Command Window or Linux Shell in that directory
 
-*cd rtvdemos*
+To start the RTView DataServer:
+```
+cd RTViewDataServer
 
-*copy \sourcePath\RTViewDataServer_YYYYMMDD.zip*
+start_server          (or ./start_server.sh in Linux)
+```
+At any time you can stop the server:
+```
+stop_server           (or ./stop_server.sh in Linux)
+```
+## Download and run the RTView-ClearBlade connector 
 
-	Where sourcePath is the location of your download.
-
-Unzip the RTViewDataServer_YYYYMMDD.zip using your favorite zip/unzip utility.
-
-	This will create a directory under rtvdemos, named RTViewDataServer.
-
-*cd RTViewDataServer*
-
-*start_server*
-
-	This will start the RTView data server which will work as a receiver and cache storage 
-	for the incoming data.
-
-*cd ..*
-
-
-## Download the RTView-ClearBlade project from GitHub
-
-* Clone the RTView-ClearBlade project on your local computer.
+* Clone this RTView-ClearBlade project to your local computer.
 
 *cd RTView-ClearBlade-Node*
 
