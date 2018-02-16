@@ -29,22 +29,23 @@ By following the steps, described below, you will be:
 	
 ## Download, configure and run the RTViewDataServer	
 
-* While in your RTViewCloud accout, click on the ? icon on the top right corner.
+* While in your RTViewCloud accout, click on the ? icon on the top right corner of the RTView Cloud banner.
 * In the RTView Cloud Support Home screen, click on the Downloads box.
 * In the RTView Cloud Downloads screen, click on the Free Download button.
 * Follow the instructions and download a copy of RTViewDataServer to your computer
 * On your computer, bring up a Command prompt.
 * Create a new top-level directory (e.g. rtvdemos)
+
 *cd rtvdemos*
 
-*copy \sourcePath\RTViewDataServer_xxx.zip*
+*copy \sourcePath\RTViewDataServer_YYYYMMDD.zip*
 
 	Where sourcePath is the location of your download and
 	xxx is the version number of the RTViewDataServer
 
-Unzip the RTViewDataServer_xxx.zip using your favorite zip/unzip utility.
+Unzip the RTViewDataServer_YYYYMMDD.zip using your favorite zip/unzip utility.
 
-	This will create a directory under rtvdemos named RTViewDataServer
+	This will create a directory under rtvdemos, named RTViewDataServer
 
 *cd RTViewDataServer*
 
@@ -58,6 +59,7 @@ Unzip the RTViewDataServer_xxx.zip using your favorite zip/unzip utility.
 ## Download the RTView-ClearBlade project from GitHub
 
 * Clone the RTView-ClearBlade project on your local computer.
+
 *cd RTView-ClearBlade-Node*
 
 *npm install*
