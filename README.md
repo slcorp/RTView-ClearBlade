@@ -6,13 +6,13 @@ This project provides tools and examples that demonstrate how RTView Cloud can b
 ![](Images/MixingPlantA.jpg)
 
 By following the steps, described below, you will be:
-* Installing and running an RTView data server on your local computer, which will allow you to store the streaming data and persist it, using RTView caches.
+* Installing and running an RTView data server on your local computer, which will allow you to store the incoming data and persist it, using RTView caches.
 * Installing and running a node script that subscribes to a few ClearBlade topics and pushes the data to the RTView data server.
-* Viewing preexisting displays, populated by data, coming via a servlet within RTView, through your free trial account on RTViewCloud.
+* Viewing preexisting displays, populated by data which is coming via a servlet within RTView, through your free trial account on RTViewCloud.
 
 
 ### Requirements
-* An RTViewCloud account
+* A free RTViewCloud trial account
 * A copy of the RTViewDataServer package
 * A copy of the RTView-ClearBlade project from GitHub
 
@@ -24,13 +24,14 @@ By following the steps, described below, you will be:
 * Log in to your RTViewCloud account.
 
 	Notice that you are automatically in your own private organization (e.g. JohnSPrivateOrg).
+
 	
 ## Download, configure and run the RTViewDataServer	
 
 * While in your RTViewCloud account, click on the ? icon on the top right corner of the RTView Cloud banner.
 * In the RTView Cloud Support Home screen, click on the Downloads box.
 * In the RTView Cloud Downloads screen, click on the Free Download button.
-* Follow the instructions and download a copy of RTViewDataServer to your computer
+* Follow the instructions and download a copy of RTViewDataServer to your computer.
 * On your computer, bring up a Command prompt.
 * Create a new top-level directory (e.g. rtvdemos)
 
@@ -38,11 +39,11 @@ By following the steps, described below, you will be:
 
 *copy \sourcePath\RTViewDataServer_YYYYMMDD.zip*
 
-	Where sourcePath is the location of your download 
+	Where sourcePath is the location of your download.
 
 Unzip the RTViewDataServer_YYYYMMDD.zip using your favorite zip/unzip utility.
 
-	This will create a directory under rtvdemos, named RTViewDataServer
+	This will create a directory under rtvdemos, named RTViewDataServer.
 
 *cd RTViewDataServer*
 
@@ -52,6 +53,7 @@ Unzip the RTViewDataServer_YYYYMMDD.zip using your favorite zip/unzip utility.
 	for the incoming data.
 
 *cd ..*
+
 
 ## Download the RTView-ClearBlade project from GitHub
 
