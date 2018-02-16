@@ -1,65 +1,63 @@
-**_WORK IN PROGRESS_**
-
-# RTView ClearBlade Demo
+# RTView ClearBlade Project
 
 ## Overview
+This project provides tools and examples that demonstrate how RTView Cloud can be used to display ClearBlade topics in graphical and highly configurable displays in the Cloud.
+
+![](Images/MixingPlantA.jpg)
+
 By following the steps, described below, you will be:
-* Installing and running an RTView data server on your local computer.
+* Installing and running an RTView data server on your local computer, which will allow you to store the incoming data and persist it, using RTView caches.
 * Installing and running a node script that subscribes to a few ClearBlade topics and pushes the data to the RTView data server.
-* Viewing preexisting displays, populated by data, coming via a servlet within RTView, through your free trial account on RTViewCloud.
+* Viewing preexisting displays, populated by data which is coming via a servlet within RTView, through your free trial account on RTViewCloud.
 
 
-### Software Requirements
-A computer with:
-* Node.js Version 6.9.0 or newer
-* A browser of your choice (e.g. Google Chrome 57.x+, MS IE 11.x+, MS Edge, or Mozilla Firefox 50.x+)
-* RTViewDataServer-Mini package (a zip file, which will be available through SL Corporation)
-* RTView-ClearBlade-Displays package (a directory, which is available through GitHub)
-* RTView-ClearBlade-Node package (a directory, which is available through GitHub)
-* A free trial subscription to RTViewCloud services
+### Requirements
+* A free RTViewCloud trial account
+* A copy of the RTViewDataServer package
+* A copy of the RTView-ClearBlade project from GitHub
 
 
-## Installation of the packages
+## Create an RTView Cloud account
 
-On your computer:
+* In a browser, go to [RTViewCloud](http://rtviewcloud.sl.com/).
+* Click on Start Free Trial and follow the process to get your free trial account.
+* Log in to your RTViewCloud account.
 
-* Create a directory and name it rtvdemos.
-* Download the RTViewDataServer-Mini.zip (THE DOWNLOAD LOCATION HAS NOT BEEN DEFINED, YET!)
-* Download the RTView-ClearBlade repository to your computer (i.e., RTView-ClearBlade-master.zip)
+	Notice that you are automatically in your own private organization (e.g. JohnSPrivateOrg).
 
-### Installation and execution of the RTViewDataServer-Mini package
-Bring up a Command prompt.
+	
+## Download, configure and run the RTViewDataServer	
+
+* While in your RTViewCloud account, click on the ? icon on the top right corner of the RTView Cloud banner.
+* In the RTView Cloud Support Home screen, click on the Downloads box.
+* In the RTView Cloud Downloads screen, click on the Free Download button.
+* Follow the instructions and download a copy of RTViewDataServer to your computer.
+* On your computer, bring up a Command prompt.
+* Create a new top-level directory (e.g. rtvdemos)
 
 *cd rtvdemos*
 
-*copy \sourcePath\RTViewDataServer-Mini.zip*
+*copy \sourcePath\RTViewDataServer_YYYYMMDD.zip*
 
-	Where sourcePath is the location of your download
+	Where sourcePath is the location of your download.
 
-Unzip the RTViewDataServer-Mini.zip using your favorite zip/unzip utility.
+Unzip the RTViewDataServer_YYYYMMDD.zip using your favorite zip/unzip utility.
 
-	This will create a directory under rtvdemos by the same name (i.e., RTViewDataServer-Mini).
+	This will create a directory under rtvdemos, named RTViewDataServer.
 
-*cd RTViewDataServer-Mini*
+*cd RTViewDataServer*
 
 *start_server*
 
-	This will start the RTView data server which will work as the receiver and cache storage 
+	This will start the RTView data server which will work as a receiver and cache storage 
 	for the incoming data.
 
 *cd ..*
 
 
-### Installation of the RTView-ClearBlade-Displays package
+## Download the RTView-ClearBlade project from GitHub
 
-* Make sure you are in rtvdemos directory.
-* Extract the RTView-ClearBlade-Displays directory out of the RTView-ClearBlade-master.zip into rtvdemos.
-
-
-### Installation and execution of the RTView-ClearBlade-Node package
-
-* Make sure you are in rtvdemos directory.
-* Extract the RTView-ClearBlade-Node directory out of the RTView-ClearBlade-master.zip into rtvdemos.
+* Clone the RTView-ClearBlade project on your local computer.
 
 *cd RTView-ClearBlade-Node*
 
@@ -73,22 +71,13 @@ Unzip the RTViewDataServer-Mini.zip using your favorite zip/unzip utility.
 	the data into the RTView data server, which was set up in the previous section.
 
 
-### Subscription, configuration and execution of the RTViewCloud Services
+## Import and view the prebuilt RTView-ClearBlade displays
 
 * In a browser, go to [RTViewCloud](http://rtviewcloud.sl.com/).
-
-* Click on Start Free Trial and follow the process to get your free trial account.
-
-* Log in to your RTViewCloud account.
-
-	Notice that you are automatically in your own private organization (e.g. JohnSPrivateOrg).
-	
-### Connecting the displays to your local RTView data server
-
 * On the top menu, click on Data.
 
 	This will take you to the RTData Server List page in which you will create a connection 
-	to your RTView data server.
+	to the RTView data server that you previously started on your localhost.
 	
 * Click on the Add Server button.
 
@@ -99,89 +88,26 @@ CLEARBLADE-IOT-SERVER
 http://localhost:3270/rtvquery
 
 * Click on Save Added Servers.
-
 * To test the connection, click on the green magnifying glass next to the CLEARBLADE-IOT-SERVER.
 	This will bring up the RTView DataServer - Cache Tables dialog.
 	You should see "Connected" under Connection Status. 
 	You should also see the ClearBladeCache in the CacheTable.
 	
 * Close the dialog.
-
 * On the top menu, click on Design.
 
 	This will bring up the RTDraw, which is RTViewCloud’s visual editor.
 	
 * Click on File in the menu.
-
 * Click on Import ….
-
-* In the file browser, change directory to \rtvdemos\RTView-ClearBlade-Displays.
-
+* In the file browser, change directory to RTView-ClearBlade-Displays.
 * Select all displays and click Open.
-
-	This step only needs to be done once for each display.
-
 * Click on File in the menu.
-
 * Click on Open ….
-
 * Double click on cb_mixing_plants.
 
 	This will load the cb_mixing_plants display into the editor. 
 	This display is configured to connect to your local RTView data server and collect data. This process then populates the display with live data that is being collected by the node script from ClearBlade.
-
-
-## External Connection
-You do not have to setup a local RTView data server to see the RTView-ClearBlade displays populated. 
-We have set up an instance in the Amazon cloud, dedicated to providing data for everyone. An instance of the RTView data server  and node subscriber program are already running on it. We have named this instance the clearblade-iot-server. The steps, below, will walk you through connecting the RTView-ClearBlade displays to the clearblade-iot-server. You will need to get a free acccount on RTViewCloud, the steps for which, are described in the "Subscription, configuration and execution of the RTViewCloud Services" section, above.
-
-### Connecting the displays to RTView's IoT data server on Amazon Cloud
-
-* On the top menu, click on Data.
-
-	This will take you to the RTData Server List page in which you will create a connection 
-	to your RTView data server.
-	
-* Click on the Add Server button. If you have already created a data server connection, named CLEARBLADE-IOT-SERVER in the previous section, simply edit the existing entry.
-
-* For Name, type:
-CLEARBLADE-IOT-SERVER
-
-* For Host/URL, type:
-http://clearblade-iot-server.slsandbox.com/rtvquery
-
-* Click on Save Added Servers.
-
-* To test the connection, click on the green magnifying glass next to the CLEARBLADE-IOT-SERVER.
-	This will bring up the RTView DataServer - Cache Tables dialog.
-	You should see "Connected" under Connection Status. 
-	You should also see the ClearBladeCache in the CacheTable.
-	
-* Close the dialog.
-
-* On the top menu, click on Design.
-
-	This will bring up the RTDraw, which is RTViewCloud’s visual editor.
-	
-* Click on File in the menu.
-
-* Click on Import ….
-
-* In the file browser, change directory to \rtvdemos\RTView-ClearBlade-Displays.
-
-* Select all displays and click Open.
-
-	This step only needs to be done once for each display.
-	
-* Click on File in the menu.
-
-* Click on Open ….
-
-* Double click on cb_mixing_plants.
-
-	This will load the cb_mixing_plants display into the editor. 
-	If your backend data server is active, this will connect your display to 
-	SL RTView's ClearBlade IoT data server that is running on an Amazon instance. 
 
 
 ## Achieved Goals
