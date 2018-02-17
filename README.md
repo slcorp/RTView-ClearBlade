@@ -10,15 +10,24 @@ By following the steps described below you will:
 * Create an account on RTView Cloud.
 * Download and run on your local computer an RTView DataServer, providing real-time data caching and historical archival.
 * Run a Node.js connector program that subscribes to a few ClearBlade topics and populates the RTView DataServer.
-* Import into RTView Cloud sample displays, showing in real-time the data coming from ClearBlade.
+* Import into RTView Cloud a few sample displays showing real-time data coming from ClearBlade.
+
+## Requirements
+To run this project, you will need to have installed on your computer:
+```
+Node.js version 6 or higher
+
+Java version 1.7 or higher
+```
 
 ## Create an RTView Cloud account
+An RTView Cloud account provides the tools for creating, viewing and publishing rich graphical displays connected to real-time data sources.
 
 * In a browser, go to [RTView Cloud](http://rtviewcloud.sl.com/).
 * Click on Start Free Trial to create your account (skip if you have an account already).
 * Login to your RTView Cloud account.
 
-	Note that you are automatically in your own private organization (e.g. JohnSPrivateOrg).
+Note that you are automatically placed into your own private organization (e.g. JohnSPrivateOrg).
 	
 ## Download and run the RTView DataServer	
 
@@ -43,7 +52,7 @@ stop_server           (or ./stop_server.sh in Linux)
 ```
 ## Download and run the RTView-ClearBlade connector 
 
-Clone this RTView-ClearBlade project to your local computer and do the following to install and run the RTView ClearBlade connector  program. This is a simple Node.js program that subscribes to public demo topics provided by ClearBlade and populates the RTView DataServer which provides a current and history cache of incoming metric values for display purposes.
+Clone this RTView-ClearBlade project to your local computer and follow the steps below to install and run the RTView ClearBlade connector program. This simple Node.js program subscribes to public demo topics provided by ClearBlade and populates the RTView DataServer, which provides current and historical caching of incoming metric values for display purposes.
 ```
 cd RTView-ClearBlade-Node
 
@@ -54,50 +63,49 @@ node rtview_clearblade_feed
 ```
 This connector program can easily be modified to subscribe to topics relevant to your own application.
 
-## Import and view the prebuilt RTView-ClearBlade displays
+## Import and view the sample RTView-ClearBlade displays
 
-* In a browser, go to [RTViewCloud](http://rtviewcloud.sl.com/).
-* On the top menu, click on Data.
+* In a browser, go to [RTView Cloud](http://rtviewcloud.sl.com/).
 
-	This will take you to the RTData Server List page in which you will create a connection 
-	to the RTView data server that you previously started on your localhost.
-	
-* Click on the Add Server button.
+* Define a connection to the RTView DataServer running on your local system:
+```
+On the RTView Cloud top menu bar, select Data.
+Select the Add RTView Server button.
+In the Add RTView Server dialog enter:
 
-* For Name, type:
-CLEARBLADE-IOT-SERVER
+	Name:       CLEARBLADE-IOT-SERVER
+	Host/URL:   http://localhost:3270/rtvquery
 
-* For Host/URL, type:
-http://localhost:3270/rtvquery
-
-* Click on Save Added Servers.
-* To test the connection, click on the green magnifying glass next to the CLEARBLADE-IOT-SERVER.
-	This will bring up the RTView DataServer - Cache Tables dialog.
-	You should see "Connected" under Connection Status. 
-	You should also see the ClearBladeCache in the CacheTable.
-	
-* Close the dialog.
-* On the top menu, click on Design.
-
-	This will bring up the RTDraw, which is RTViewCloud’s visual editor.
-	
-* Click on File in the menu.
-* Click on Import ….
-* In the file browser, change directory to RTView-ClearBlade-Displays.
-* Select all displays and click Open.
-* Click on File in the menu.
-* Click on Open ….
-* Double click on cb_mixing_plants.
-
-	This will load the cb_mixing_plants display into the editor. 
-	This display is configured to connect to your local RTView data server and collect data. This process then populates the display with live data that is being collected by the node script from ClearBlade.
-
+Click on Save Added Servers.
+```
+* Test that the connection is successful:
+```
+Click on the green magnifying glass icon next to the CLEARBLADE-IOT-SERVER entry.
+This will invoke the RTView DataServer - Cache Tables dialog.
+Verify that you see "Connected" under Connection Status. 
+Verify that you see _ClearBladeCache_ in the CacheTable.
+Close the dialog.
+```
+* Import the sample displays:
+```
+On the RTView Cloud top menu bar, click on Design to invoke the RTDraw visual editing tool.
+Select the File dropdown menu and click on Import... 
+In the file browser, navigate to the RTView-ClearBlade-Displays directory within this project.
+Select all displays and click Open.
+```
+* View or edit the sample displays:
+```
+Select the File dropdown menu and click on Open...
+Double click the name of the display you would like to open and view in real-time.
+```
+The sample displays are configured to connect to your local RTView data server and present data changing in real-time.
+You can experiment with the editing features of RTDraw to make changes to these displays or create your own.
 
 ## Achieved Goals
-RTView-ClearBlade demo should have : 
+In this RTView-ClearBlade project you will have achieved the following: 
 * Shown how easy it is to display ClearBlade topics in graphical and highly configurable displays in the Cloud.
-* Conveyed the structure of the node script, needed to send data to RTView, which subscribes to topics of interest.
-* Allowed the users to enhance the existing RTView displays or create new ones.
+* Conveyed the structure of the simple node program used to send data to RTView, subscribing to topics of interest.
+* Allowed the users to view or enhance the sample RTView displays or create new displays.
 
-**_Feel free to experiment with this project, modify it, enhance it and share your experience, comments, suggestions and/or enhancements with us._**
+**Feel free to experiment with, modify or enhance this project, and share your experience, comments and suggestions with us. Please fork this repo and submit a pull request for any changes you would like to suggest.**
 
