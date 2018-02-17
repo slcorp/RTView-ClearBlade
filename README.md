@@ -6,10 +6,11 @@ This project provides tools and examples that show how to use RTView Cloud with 
 ![](Images/MixingPlantA.jpg)
 
 By following the steps described below you will:
-* Create an account on RTView Cloud
-* Download and run on your local computer an RTView DataServer, providing real-time data caching and historical archival
-* Run a Node.js connector program that subscribes to a few ClearBlade topics and populates the RTView DataServer
-* Import into RTView Cloud sample displays, showing in real-time the data coming from ClearBlade
+
+* Create an account on RTView Cloud.
+* Download and run on your local computer an RTView DataServer, providing real-time data caching and historical archival.
+* Run a Node.js connector program that subscribes to a few ClearBlade topics and populates the RTView DataServer.
+* Import into RTView Cloud sample displays, showing in real-time the data coming from ClearBlade.
 
 ## Create an RTView Cloud account
 
@@ -21,10 +22,10 @@ By following the steps described below you will:
 	
 ## Download and run the RTView DataServer	
 
-* From your RTView Cloud account, click on the ? icon at upper right to go to the Support page
-* Select Downloads and elect to download the RTView DataServer to your computer
-* Unzip the downloaded **RTViewDataServer_YYYYMMDD.zip** file to a directory of your choice
-* Open a Command Window or Linux Shell in that directory
+* From your RTView Cloud account, click on the ? icon at upper right to go to the Support page.
+* Select Downloads and elect to download the RTView DataServer to your computer.
+* Unzip the downloaded **RTViewDataServer_YYYYMMDD.zip** file to a directory of your choice.
+* Open a Command Window or Linux Shell in that directory.
 
 To start the RTView DataServer:
 ```
@@ -32,25 +33,26 @@ cd RTViewDataServer
 
 start_server          (or ./start_server.sh in Linux)
 ```
+The RTView DataServer is now ready to receive data at the following http URL:
+```
+http(s)://localhost:3270/rtvpost
+```
 At any time you can stop the server:
 ```
 stop_server           (or ./stop_server.sh in Linux)
 ```
 ## Download and run the RTView-ClearBlade connector 
 
-* Clone this RTView-ClearBlade project to your local computer.
+Clone this RTView-ClearBlade project to your local computer and do the following to install and run the RTView ClearBlade connector  program. This is a simple Node.js program that subscribes to public demo topics provided by ClearBlade and populates the RTView DataServer which provides a current and history cache of incoming metric values for display purposes.
+```
+cd RTView-ClearBlade-Node
 
-*cd RTView-ClearBlade-Node*
+npm install
 
-*npm install*
+node rtview_clearblade_feed
 
-	This will install the necessary node packages.
-
-*node rtview_clearblade_feed*
-
-	This will start the node script which subscribes to a few ClearBlade topics and pushes 
-	the data into the RTView data server, which was set up in the previous section.
-
+```
+This connector program can easily be modified to subscribe to topics relevant to your own application.
 
 ## Import and view the prebuilt RTView-ClearBlade displays
 
