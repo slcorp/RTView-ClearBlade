@@ -53,13 +53,16 @@ stop_server           (or ./stop_server.sh in Linux)
 ## Download and run the RTView-ClearBlade connector 
 
 Clone this RTView-ClearBlade project to your local computer and follow the steps below to install and run the RTView ClearBlade connector program. This simple Node.js program subscribes to public demo topics provided by ClearBlade and populates the RTView DataServer, which provides current and historical caching of incoming metric values for display purposes.
+
+To install the connector program:
 ```
 cd RTView-ClearBlade-Node
 
 npm install
-
+```
+To start the program:
+```
 node rtview_clearblade_feed
-
 ```
 This connector program can easily be modified to subscribe to topics relevant to your own application.
 
@@ -83,7 +86,7 @@ Click on Save Added Servers.
 Click on the green magnifying glass icon next to the CLEARBLADE-IOT-SERVER entry.
 This will invoke the RTView DataServer - Cache Tables dialog.
 Verify that you see "Connected" under Connection Status. 
-Verify that you see _ClearBladeCache_ in the CacheTable.
+Verify that you see ClearBladeCache in the CacheTable.
 Close the dialog.
 ```
 * Import the sample displays:
@@ -103,9 +106,9 @@ You can experiment with the editing features of RTDraw to make changes to these 
 
 ## Achieved Goals
 In this RTView-ClearBlade project you will have achieved the following: 
-* Shown how easy it is to display ClearBlade topics in graphical and highly configurable displays in the Cloud.
-* Conveyed the structure of the simple node program used to send data to RTView, subscribing to topics of interest.
-* Allowed the users to view or enhance the sample RTView displays or create new displays.
+* Seen how easy it is to display ClearBlade topics in graphical and highly configurable displays in the Cloud.
+* Launched the simple node program used to send data to RTView, subscribing to topics of interest.
+* Seen how users are able to view or enhance the sample RTView displays or create new displays.
 
 **Feel free to experiment with, modify or enhance this project, and share your experience, comments and suggestions with us. Please fork this repo and submit a pull request for any changes you would like to suggest.**
 
