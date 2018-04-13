@@ -1,5 +1,5 @@
 {
-    "modifiedDate": "2017-11-12T23:36:52.207Z",
+    "modifiedDate": "2018-04-13T17:28:40.823Z",
     "viewport": {
         "x": 0,
         "y": 0,
@@ -16,7 +16,7 @@
     "styleSheet": {},
     "linksRoute": "Angled",
     "layout": "",
-    "version": "1.25.0",
+    "version": "1.35.0",
     "nodeDataArray": [
         {
             "key": 4,
@@ -24,7 +24,7 @@
             "bgVisible": true,
             "size": "740 160",
             "rowSeriesFlag": true,
-            "pos": "400 180",
+            "pos": "400 166",
             "dispName": "cachegrid",
             "bindings": {
                 "component": {
@@ -38,7 +38,7 @@
                     "type": "cache_advanced"
                 }
             },
-            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png",
+            "imgSrc": "$assets/binders/images/default.png",
             "columns": {
                 "time_stamp": {
                     "title": "Time Stamp"
@@ -65,17 +65,29 @@
                     "align": "center"
                 },
                 "post_time": {
-                    "width": 170
+                    "width": 170,
+                    "hidden": true
+                },
+                "Expired": {
+                    "title": "",
+                    "width": 0,
+                    "format": "",
+                    "align": "default",
+                    "hidden": true
                 }
-            }
+            },
+            "bgBorderVisible": true,
+            "bgBorderColor": "#cccccc",
+            "bgBorderWidth": 1,
+            "bgBorderRadius": 6
         },
         {
             "key": -2,
             "category": "extern-custom-table",
             "bgVisible": true,
-            "size": "740 280",
+            "size": "740 260",
             "rowSeriesFlag": true,
-            "pos": "400 450",
+            "pos": "400 438",
             "dispName": "cachegrid",
             "bindings": {
                 "component": {
@@ -89,7 +101,7 @@
                     "type": "cache_advanced"
                 }
             },
-            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png",
+            "imgSrc": "$assets/binders/images/default.png",
             "columns": {
                 "time_stamp": {
                     "title": "Time Stamp"
@@ -99,7 +111,8 @@
                 },
                 "plant_id": {
                     "title": "Plant ID",
-                    "align": "center"
+                    "align": "center",
+                    "width": 60
                 },
                 "metric_name": {
                     "title": "Metric",
@@ -113,7 +126,11 @@
                     "title": "Unit",
                     "align": "center"
                 }
-            }
+            },
+            "bgBorderVisible": true,
+            "bgBorderColor": "#cccccc",
+            "bgBorderWidth": 1,
+            "bgBorderRadius": 6
         },
         {
             "key": 1,
@@ -129,10 +146,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 16pt sans-serif",
+            "labelFont": "normal bold 18pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "398.4 26.6",
-            "labelColor": "#497ee7"
+            "labelColor": "#0b83b2"
         },
         {
             "key": -4,
@@ -148,10 +165,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 12pt sans-serif",
+            "labelFont": "normal bold 12pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
-            "pos": "105.2 288.4",
-            "labelColor": "#497ee7"
+            "pos": "105 293",
+            "labelColor": "#000000"
         },
         {
             "key": -5,
@@ -167,10 +184,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 12pt sans-serif",
+            "labelFont": "normal bold 12pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
-            "pos": "103.4 75.8",
-            "labelColor": "#497ee7"
+            "pos": "106 70",
+            "labelColor": "#000000"
         }
     ],
     "linkDataArray": []

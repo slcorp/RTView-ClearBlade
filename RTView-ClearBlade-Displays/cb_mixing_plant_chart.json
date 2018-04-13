@@ -1,5 +1,5 @@
 {
-    "modifiedDate": "2017-11-12T23:33:01.014Z",
+    "modifiedDate": "2018-04-13T17:37:22.781Z",
     "viewport": {
         "x": 0,
         "y": 0,
@@ -13,18 +13,21 @@
         "resizable": false
     },
     "preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAABZUlEQVR4Xu3TQREAAAiEQK9/aWvsAxMw4O06ysAommCuINgTFKQgmAEMp4UUBDOA4bSQgmAGMJwWUhDMAIbTQgqCGcBwWkhBMAMYTgspCGYAw2khBcEMYDgtpCCYAQynhRQEM4DhtJCCYAYwnBZSEMwAhtNCCoIZwHBaSEEwAxhOCykIZgDDaSEFwQxgOC2kIJgBDKeFFAQzgOG0kIJgBjCcFlIQzACG00IKghnAcFpIQTADGE4LKQhmAMNpIQXBDGA4LaQgmAEMp4UUBDOA4bSQgmAGMJwWUhDMAIbTQgqCGcBwWkhBMAMYTgspCGYAw2khBcEMYDgtpCCYAQynhRQEM4DhtJCCYAYwnBZSEMwAhtNCCoIZwHBaSEEwAxhOCykIZgDDaSEFwQxgOC2kIJgBDKeFFAQzgOG0kIJgBjCcFlIQzACG00IKghnAcFpIQTADGE4LKQhmAMNpIQXBDGA4LQQL8oTPAGUY76lBAAAAAElFTkSuQmCC",
+    "localVars": {
+        "plant_id": "A"
+    },
     "styleSheet": {},
     "linksRoute": "Angled",
     "layout": "",
-    "version": "1.25.0",
+    "version": "1.35.0",
     "nodeDataArray": [
         {
             "key": -2,
             "category": "extern-custom-table",
             "bgVisible": true,
-            "size": "370 140",
+            "size": "366 190",
             "rowSeriesFlag": true,
-            "pos": "200 520",
+            "pos": "200 478",
             "dispName": "cachegrid",
             "bindings": {
                 "component": {
@@ -37,16 +40,16 @@
                     "timeRange": -1,
                     "filter": {
                         "metric_name": "ExhaustAirTemp",
-                        "plant_id": "$gplant_id"
+                        "plant_id": "$plant_id"
                     },
                     "type": "cache_advanced"
                 }
             },
-            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png",
+            "imgSrc": "$assets/binders/images/default.png",
             "columns": {
                 "time_stamp": {
                     "title": "Time Stamp",
-                    "width": 100
+                    "width": 110
                 },
                 "plant_name": {
                     "title": "Plant Name"
@@ -66,7 +69,11 @@
                 "unit": {
                     "title": "Unit"
                 }
-            }
+            },
+            "bgBorderVisible": true,
+            "bgBorderColor": "#cccccc",
+            "bgBorderWidth": 1,
+            "bgBorderRadius": 4
         },
         {
             "key": 1,
@@ -82,10 +89,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 16pt sans-serif",
+            "labelFont": "normal bold 18pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
-            "pos": "398.4 17.6",
-            "labelColor": "#497ee7"
+            "pos": "399 25",
+            "labelColor": "#0b83b2"
         },
         {
             "key": -4,
@@ -101,10 +108,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 10pt sans-serif",
+            "labelFont": "normal bold 10pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
-            "pos": "145.6 433.6",
-            "labelColor": "#497ee7"
+            "pos": "122.81 375.04",
+            "labelColor": "#202F3F"
         },
         {
             "key": -5,
@@ -120,22 +127,22 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 10pt sans-serif",
+            "labelFont": "normal bold 10pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
-            "pos": "122.4 37.8",
-            "labelColor": "#497ee7"
+            "pos": "98.4 35.8",
+            "labelColor": "#202F3F"
         },
         {
             "key": 12,
             "category": "extern-trendchart",
             "bgVisible": true,
-            "size": "740 110",
+            "size": "769 90",
             "fillFlag": true,
             "legendVisFlag": false,
             "legendPos": "right",
-            "scrollFlag": true,
+            "scrollFlag": false,
             "stripFlag": false,
-            "pos": "400 100",
+            "pos": "400 88",
             "bindings": {
                 "component": {
                     "url": "CLEARBLADE-IOT-SERVER",
@@ -145,22 +152,31 @@
                     "timeRange": -1,
                     "filter": {
                         "metric_name": "ExhaustAirTemp",
-                        "plant_id": "$gplant_id"
+                        "plant_id": "$plant_id"
                     },
                     "type": "cache_advanced"
                 }
             },
-            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png",
+            "imgSrc": "$assets/binders/images/default.png",
             "labelVisible": false,
-            "labelText": ""
+            "labelText": "",
+            "bgBorderVisible": true,
+            "bgBorderColor": "#cccccc",
+            "bgBorderWidth": 1,
+            "bgBorderRadius": 0,
+            "miscProps": {
+                "colors": [
+                    "#3b9edf"
+                ]
+            }
         },
         {
             "key": -6,
             "category": "extern-custom-table",
             "bgVisible": true,
-            "size": "370 140",
+            "size": "385 190",
             "rowSeriesFlag": true,
-            "pos": "600 520",
+            "pos": "589 478",
             "dispName": "cachegrid",
             "bindings": {
                 "component": {
@@ -173,16 +189,16 @@
                     "timeRange": -1,
                     "filter": {
                         "metric_name": "bearing/bearing1/bearingrpm",
-                        "plant_id": "$gplant_id"
+                        "plant_id": "$plant_id"
                     },
                     "type": "cache_advanced"
                 }
             },
-            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png",
+            "imgSrc": "$assets/binders/images/default.png",
             "columns": {
                 "time_stamp": {
                     "title": "Time Stamp",
-                    "width": 100
+                    "width": 110
                 },
                 "plant_name": {
                     "title": "Plant Name"
@@ -202,7 +218,11 @@
                 "unit": {
                     "title": "Unit"
                 }
-            }
+            },
+            "bgBorderVisible": true,
+            "bgBorderColor": "#cccccc",
+            "bgBorderWidth": 1,
+            "bgBorderRadius": 4
         },
         {
             "key": -7,
@@ -218,22 +238,22 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 10pt sans-serif",
+            "labelFont": "normal bold 10pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
-            "pos": "495.5 433.15",
-            "labelColor": "#497ee7"
+            "pos": "465.34 372.59",
+            "labelColor": "#202F3F"
         },
         {
             "key": -8,
             "category": "extern-trendchart",
             "bgVisible": true,
-            "size": "740 110",
+            "size": "766 90",
             "fillFlag": true,
             "legendVisFlag": false,
             "legendPos": "right",
-            "scrollFlag": true,
+            "scrollFlag": false,
             "stripFlag": false,
-            "pos": "400 234",
+            "pos": "400.21 199.6",
             "bindings": {
                 "component": {
                     "url": "CLEARBLADE-IOT-SERVER",
@@ -243,12 +263,21 @@
                     "timeRange": -1,
                     "filter": {
                         "metric_name": "DryingAggregateTemp",
-                        "plant_id": "$gplant_id"
+                        "plant_id": "$plant_id"
                     },
                     "type": "cache_advanced"
                 }
             },
-            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png"
+            "imgSrc": "$assets/binders/images/default.png",
+            "bgBorderVisible": true,
+            "bgBorderColor": "#cccccc",
+            "bgBorderWidth": 1,
+            "bgBorderRadius": 0,
+            "miscProps": {
+                "colors": [
+                    "#3b9edf"
+                ]
+            }
         },
         {
             "key": -9,
@@ -264,22 +293,22 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 10pt sans-serif",
+            "labelFont": "normal bold 10pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
-            "pos": "152.4 169.6",
-            "labelColor": "#497ee7"
+            "pos": "127.61 147.4",
+            "labelColor": "#202F3F"
         },
         {
             "key": -11,
             "category": "extern-trendchart",
             "bgVisible": true,
-            "size": "740 110",
+            "size": "765 90",
             "fillFlag": true,
             "legendVisFlag": false,
             "legendPos": "right",
-            "scrollFlag": true,
+            "scrollFlag": false,
             "stripFlag": false,
-            "pos": "400 364",
+            "pos": "400.21 313.6",
             "bindings": {
                 "component": {
                     "url": "CLEARBLADE-IOT-SERVER",
@@ -289,27 +318,44 @@
                     "timeRange": -1,
                     "filter": {
                         "metric_name": "bearing/bearing1/bearingrpm",
-                        "plant_id": "$gplant_id"
+                        "plant_id": "$plant_id"
                     },
                     "type": "cache_advanced"
                 }
             },
-            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png"
+            "imgSrc": "$assets/binders/images/default.png",
+            "bgBorderVisible": true,
+            "bgBorderColor": "#cccccc",
+            "bgBorderWidth": 1,
+            "bgBorderRadius": 0,
+            "miscProps": {
+                "colors": [
+                    "#3b9edf"
+                ]
+            }
         },
         {
             "key": 19,
             "category": "extern-cachectrl2",
             "bgVisible": true,
-            "size": "266 38",
+            "size": "253 38",
             "server": "CLEARBLADE-IOT-SERVER",
             "cache": "ClearBladeCache",
             "autoSelect": true,
-            "setGlobals": true,
+            "setGlobals": false,
             "indexColumns": "plant_id",
             "bgVis": false,
-            "pos": "670 27",
+            "pos": "676.71 24.8",
             "dispName": "cachectrl2",
-            "serverURL": "http://localhost:3270/rtvquery"
+            "serverURL": "http://sl-iot-server-3.slsandbox.com/clearblade_rtvquery",
+            "miscProps": {
+                "columns": {
+                    "plant_id": {
+                        "title": "Plant ID",
+                        "varToSet": "plant_id"
+                    }
+                }
+            }
         },
         {
             "key": -10,
@@ -325,10 +371,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 10pt sans-serif",
+            "labelFont": "normal bold 10pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
-            "pos": "87.4 300.25",
-            "labelColor": "#497ee7"
+            "pos": "61.42 260.6",
+            "labelColor": "#202F3F"
         }
     ],
     "linkDataArray": []
