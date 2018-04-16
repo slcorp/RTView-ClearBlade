@@ -1,5 +1,5 @@
 {
-    "modifiedDate": "2017-12-24T22:36:00.895Z",
+    "modifiedDate": "2018-04-16T16:19:54.274Z",
     "viewport": {
         "x": 0,
         "y": 0,
@@ -12,11 +12,11 @@
         "height": 600,
         "resizable": false
     },
-    "preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAADLklEQVR4Xu2aT0sUcRzGn9/szKDZYSUJYn0BHTp3CLq4a0L3XkCXqLYIOkdUx4JAtj/0SiRzhegteOgepKWUELg1O/P7xm81c1FDliGfwWcvIjLrZz6feWZH0EEvKgOOikYwUBCyi0BBFITMABmOFqIgZAbIcLQQBSEzQIajhSgImQEyHC1EQcgMkOFoIQpCZoAMRwtREDIDZDhaiIKQGSDD0UIUhMwAGY4WoiBkBshwtBAFITNAhqOFKMhoBszsEQAb7WjAOfd41GP/53GVWYiZjRwjCHXOVeJcKwEZhPazwuyQf7QsIiD2ebB+6MWcJEklzrUSkMHy9YU1G/M5Chdhb5fIR4MIPvLoR8BEUeDZ7DnUzO/Gubu0jjdXG5U410pABrM3Fj7/85Y1nvfQi1O8nqnj3uI6ns9N46dLcL/7CZ2ZBsbTWiXOtRKQBwbZ+Ujpx4akiJBHQFJ4WFjQntd8q46axUjTtBLnWgnI4Pdrbvbg3eq+z4h+LYQAnAHmgMvn6/jw8TuSYguX6qdx7eKZwTEKUvKzYpZldnv5C5zFcAc8/Ro8Cg9M+h9IigLfxqbwtHkWpyxXkJJbDN4uBAlf4zzGzfdr+36FIcdEZthKk8HPXjTDMv7eALSQkquEIHe6G3A+Rme2vv1khQiJZbi1vIlOcxLtxVW8ujK98/fj8N1YQUoO0s8ya3c3ULNfmG81ht69vbSJl63tSH9e3mWILN39XkFKDtLLcovgBzehh29X8GTuAmID8iM+lihIyUFOytsd8fo6KTqO/zwV5PgbDBEoiIKQGSDD0UIUhMwAGY4WoiBkBshwtBAFITNAhqOFKAiZATIcLURByAyQ4WghCkJmgAxHC1EQMgNkOFqIgpAZIMPRQhSEzAAZjhaiIGQGyHC0EAUhM0CGo4UoCJkBMhwtREHIDJDhaCEKQmaADEcLURAyA2Q4WoiCkBkgw9FCFITMABmOFqIgZAbIcLQQBSEzQIajhSgImQEyHC1EQcgMkOFoIQpCZoAMRwtREDIDZDhaiIKQGSDD0UIUhMwAGY4WoiBkBshwtBAFITNAhqOFKAiZATIcLYQsyG9vKJtlrqqgGgAAAABJRU5ErkJggg==",
+    "preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAADr0lEQVR4Xu2aS2oUURiFz63qanyhEcVBuwAnugXFJAYcOHUDihgfIE6d6MyJiG/X4AYisQPqChw4cSYIiRolAfHVXVVXqqOSEJVD0xxvw6lBAsmpOn++r/+uakiAj6QIhKSm8TCwkMReBBZiIYkRSGwcb4iFJEYgsXG8IRaSGIHExvGGWEhiBBIbxxtiIYkRSGwcb4iFJEYgsXG8IRaSGIHExvGGWEhiBBIbxxtiIYkRSGwcb4iFJEYgsXG8IRaSGIHExvGGWMhwBGKMVwHE4c4GQgjXhj1Xed7YbEiMcWgZDdAQwlj8rWMxZAO0LOvHGcIfpdQZkKFC8/VvRwhhNoTwWvlqH6ZrbIScnluK7bpCGTKs/wfYrLEBoM5qVAFoMjdnOsjqRtDacbG7jIfHO0dDCE+HgaQ8Z2yEnJlb/Odb1rbyK7602ngwOYFLTz7ixkwH37ICl7tvcGdyP7YUmYWM8pW1ScjPW0o/jyjqDGWWoahKxGaD1h23p3cii20URWEhoxSyXMV4ZX5p0yX7GVDUGNxdYgAOH5jA81craJWfcWhLG6eOdAbnWMgobQDo9Xrx/MJ7ROTI/vD0G1GjqoGJ+hOKqsLq1r24PrkP22NpISN2MbhcI6T53ipbOPvs7aaKiBI7ehGf28Xgd3en9jQPu79z3pARW2mEXFj4gKwucPvYrsHVIwJaKDG7sIK7U7txfv4d7s00b1GNu43PKxYyYiFVvx9nu8vIYw+3ptfuC7+Oc91V3J+e2PCzKvSRx7Vt8T1kxDKay32v6jd5rAdXfvRyEScPdpADg4+DzJHn+YkQwgsm+z8zY/M55H9CUnZbiJI20WUhBCRlxEKUtIkuCyEgKSMWoqRNdFkIAUkZsRAlbaLLQghIyoiFKGkTXRZCQFJGLERJm+iyEAKSMmIhStpEl4UQkJQRC1HSJroshICkjFiIkjbRZSEEJGXEQpS0iS4LISApIxaipE10WQgBSRmxECVtostCCEjKiIUoaRNdFkJAUkYsREmb6LIQApIyYiFK2kSXhRCQlBELUdImuiyEgKSMWIiSNtFlIQQkZcRClLSJLgshICkjFqKkTXRZCAFJGbEQJW2iy0IISMqIhShpE10WQkBSRixESZvoshACkjJiIUraRJeFEJCUEQtR0ia6LISApIxYiJI20WUhBCRlxEKUtIkuCyEgKSMWoqRNdFkIAUkZsRAlbaLLQghIyoiFKGkTXRZCQFJGLERJm+iyEAKSMmIhStpE1w+InaNl8JnIQwAAAABJRU5ErkJggg==",
     "styleSheet": {},
     "linksRoute": "Angled",
     "layout": "",
-    "version": "1.26.0",
+    "version": "1.35.0",
     "nodeDataArray": [
         {
             "key": 21,
@@ -26,7 +26,9 @@
             "imgVisible": true,
             "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/b087161c-ef15-43ed-8120-8f81258ba722/usa_map.jpg",
             "pos": "402 370",
-            "scaleImage": true
+            "scaleImage": true,
+            "bgBorderVisible": false,
+            "bgBorderRadius": 0
         },
         {
             "key": 2,
@@ -44,8 +46,10 @@
                 "vertical": "Center"
             },
             "labelFont": "normal normal 12pt sans-serif",
-            "valueFont": "normal normal 12pt sans-serif",
-            "pos": "400 92"
+            "valueFont": "normal normal 12pt external:\"Open Sans\"",
+            "pos": "400 92",
+            "valueColor": "#202f3f",
+            "bgBorderRadius": 4
         },
         {
             "key": 1,
@@ -61,166 +65,67 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 12pt sans-serif",
+            "labelFont": "normal bold 14pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "387 24",
-            "labelColor": "#497ee7"
+            "labelColor": "#0b83b3"
         },
         {
-            "key": 4,
-            "category": "extern-custom-table",
+            "key": 32,
+            "category": "extern-json-object",
             "bgVisible": true,
-            "size": "128 46",
-            "rowSeriesFlag": true,
-            "pos": "80 350",
-            "dispName": "cachegrid",
-            "script": "if (rtvEvent.type === 'select') {\n     var ev = rtvEvent;     \n     var rtvPanel = ev.rtvPanel;     \n     rtvPanel.updateVars({gplant_id : 'A' });     \n     rtvPanel.load('cb_mixing_plants.json'); \n}\n",
-            "bindings": {
-                "component": {
-                    "url": "CLEARBLADE-IOT-SERVER",
-                    "cache": "ClearBladeCache",
-                    "table": "current",
-                    "value": "plant_id",
-                    "timeRange": -1,
-                    "filter": {
-                        "plant_id": "A"
-                    },
-                    "type": "cache_advanced"
+            "size": "280 150",
+            "rowSeriesFlag": false,
+            "pos": "189 404",
+            "dispName": "cb_sub_temperature.json",
+            "drilldown": {
+                "name": "cb_mixing_plants.json",
+                "vars": {
+                    "gplant_id": "A"
                 }
             },
-            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png",
-            "columns": {
-                "plant_id": {
-                    "title": "",
-                    "width": 0,
-                    "format": "",
-                    "align": "center",
-                    "hidden": false
-                }
+            "localVars": {
+                "plant_id": "A",
+                "plant_name": "San Francisco"
             }
         },
         {
-            "key": -5,
-            "category": "extern-custom-table",
+            "key": -11,
+            "category": "extern-json-object",
             "bgVisible": true,
-            "size": "128 46",
-            "rowSeriesFlag": true,
-            "pos": "70 190",
-            "dispName": "cachegrid",
-            "script": "if (rtvEvent.type === 'select') {\n     var ev = rtvEvent;     \n     var rtvPanel = ev.rtvPanel;     \n     rtvPanel.updateVars({gplant_id : 'B' });     \n     rtvPanel.load('cb_mixing_plants.json'); \n}\n",
-            "bindings": {
-                "component": {
-                    "url": "CLEARBLADE-IOT-SERVER",
-                    "cache": "ClearBladeCache",
-                    "table": "current",
-                    "value": "plant_id",
-                    "timeRange": -1,
-                    "filter": {
-                        "plant_id": "B"
-                    },
-                    "type": "cache_advanced"
+            "size": "280 150",
+            "rowSeriesFlag": false,
+            "pos": "560 340",
+            "dispName": "cb_sub_temperature.json",
+            "drilldown": {
+                "name": "cb_mixing_plants.json",
+                "vars": {
+                    "plant_id": "C"
                 }
             },
-            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png",
-            "columns": {
-                "plant_id": {
-                    "title": "",
-                    "width": 0,
-                    "format": "",
-                    "align": "center",
-                    "hidden": false
-                }
+            "localVars": {
+                "plant_id": "C",
+                "plant_name": "Chicago"
             }
         },
         {
-            "key": -6,
-            "category": "extern-custom-table",
+            "key": -12,
+            "category": "extern-json-object",
             "bgVisible": true,
-            "size": "128 46",
-            "rowSeriesFlag": true,
-            "pos": "510 280",
-            "dispName": "cachegrid",
-            "script": "if (rtvEvent.type === 'select') {\n     var ev = rtvEvent;     \n     var rtvPanel = ev.rtvPanel;     \n     rtvPanel.updateVars({gplant_id : 'C' });     \n     rtvPanel.load('cb_mixing_plants.json'); \n}\n",
-            "bindings": {
-                "component": {
-                    "url": "CLEARBLADE-IOT-SERVER",
-                    "cache": "ClearBladeCache",
-                    "table": "current",
-                    "value": "plant_id",
-                    "timeRange": -1,
-                    "filter": {
-                        "plant_id": "C"
-                    },
-                    "type": "cache_advanced"
+            "size": "280 150",
+            "rowSeriesFlag": false,
+            "pos": "160 240",
+            "dispName": "cb_sub_temperature.json",
+            "drilldown": {
+                "name": "cb_mixing_plants.json",
+                "vars": {
+                    "plant_id": "B"
                 }
             },
-            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png",
-            "columns": {
-                "plant_id": {
-                    "title": "",
-                    "width": 0,
-                    "format": "",
-                    "align": "center",
-                    "hidden": false
-                }
+            "localVars": {
+                "plant_id": "B",
+                "plant_name": "Seattle"
             }
-        },
-        {
-            "key": -7,
-            "size": "80 24",
-            "figure": "Rectangle",
-            "category": "GeneralText",
-            "bgVisible": false,
-            "bgBorderVisible": false,
-            "labelVisible": true,
-            "labelText": "San Francisco",
-            "labelAlignment": {
-                "horizontal": "Center",
-                "vertical": "Center"
-            },
-            "valueVisible": false,
-            "labelFont": "normal bold 12pt sans-serif",
-            "valueFont": "normal normal 12pt sans-serif",
-            "pos": "80 310",
-            "labelColor": "#4c4c4c"
-        },
-        {
-            "key": -8,
-            "size": "80 24",
-            "figure": "Rectangle",
-            "category": "GeneralText",
-            "bgVisible": false,
-            "bgBorderVisible": false,
-            "labelVisible": true,
-            "labelText": "Seattle",
-            "labelAlignment": {
-                "horizontal": "Center",
-                "vertical": "Center"
-            },
-            "valueVisible": false,
-            "labelFont": "normal bold 12pt sans-serif",
-            "valueFont": "normal normal 12pt sans-serif",
-            "pos": "175 193",
-            "labelColor": "#4c4c4c"
-        },
-        {
-            "key": -9,
-            "size": "80 24",
-            "figure": "Rectangle",
-            "category": "GeneralText",
-            "bgVisible": false,
-            "bgBorderVisible": false,
-            "labelVisible": true,
-            "labelText": "Chicago",
-            "labelAlignment": {
-                "horizontal": "Center",
-                "vertical": "Center"
-            },
-            "valueVisible": false,
-            "labelFont": "normal bold 12pt sans-serif",
-            "valueFont": "normal normal 12pt sans-serif",
-            "pos": "515 325",
-            "labelColor": "#4c4c4c"
         }
     ],
     "linkDataArray": []
