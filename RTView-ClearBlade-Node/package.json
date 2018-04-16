@@ -8,8 +8,10 @@
     "rtview"
   ],
   "homepage": "http://www.sl.com",
-
   "main": "rtview_clearblade_feed.js",
+  "scripts": {
+    "start": "node rtview_clearblade_feed.js"
+  },
   "engines": [
     "node"
   ],
