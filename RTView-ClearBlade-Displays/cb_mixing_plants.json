@@ -1,5 +1,5 @@
 {
-    "modifiedDate": "2017-11-16T03:18:57.096Z",
+    "modifiedDate": "2018-04-16T16:11:03.423Z",
     "viewport": {
         "x": 0,
         "y": 0,
@@ -12,59 +12,47 @@
         "height": 600,
         "resizable": false
     },
-    "preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAACIklEQVR4Xu2XsU3DYBQG34uQ0mcBMwIbkA1oKNiEEpiGgoYRQoNExwjpPAMFeZELkIWMZEUkPqOji/ST/3KXL4QMf1AGEkUjTBgE9iYwiEFgBmA4LsQgMAMwHBdiEJgBGI4LMQjMAAzHhRgEZgCG40IMAjMAw3EhBoEZgOG4EIPADMBwXIhBYAZgOC7EIDADMBwXYhCYARiOCzHI3xmoqvOIaMY8Y2a+jDk39ZnZLOSxntaL2K2/hO1isbmJ6+7x3RiJmTmL1zoLyE74drt9bZrmo23bs9Vq9blcLisi3iLi1iBjDJzgTFV1C7kcc1VmPow5N/WZ2SxkSFRV3fuRNfVbqHe/QUAxOpSqeo6Iqx5W901q8CPMP+oniFdVmx8BDHIC779eYZAp7Q/cbRCDHN3Af/ja+/3fe0S8R8TFkLXM7J87uthDL5h1kENfNPn3DAKrYxCDwAzAcFyIQWAGYDguxCAwAzAcF2IQmAEYjgsxCMwADMeFGARmAIbjQgwCMwDDcSEGgRmA4bgQg8AMwHBciEFgBmA4LsQgMAMwHBdiEJgBGI4LMQjMAAzHhRgEZgCG40IMAjMAw3EhBoEZgOG4EIPADMBwXIhBYAZgOC7EIDADMBwXYhCYARiOCzEIzAAMx4UYBGYAhuNCDAIzAMNxIQaBGYDhuBCDwAzAcFyIQWAGYDguxCAwAzAcF2IQmAEYjgsxCMwADMeFGARmAIazB/NXQGX9p7vZAAAAAElFTkSuQmCC",
+    "preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAACnElEQVR4Xu2XPUoDURSF7wNBRUkbSaNLsLA3S7FzEwGVrMvCwsrG1iZdIJANSJA8GVCwmGLmyJncgW/A7p3zrt+Xm58SPKkIlFTTMEwgJNmLACEISUYg2ThsCEKSEUg2DhuCkGQEko3DhiAkGYFk47AhCElGINk4bAhCkhFINg4bgpBkBJKNw4YgJBmBZOOwIQhJRiDZOGwIQpIRSDYOG4KQZASSjcOGIOTfBE4iYhcR+1rrVURcdmkspbx0OXfoM6PZkMXbYr7fx3y72p5NLiafp+fHz8ub5TwiHrpALKWM4n8dxZAN8PV6/TqbzXabzeZoOp1+/fD9iIh7hHQhMMCZWmuzIbddriqlPHU5d+gzo9mQNlC11kfesg79EvpzP0ISyWhGaRHSfJNqfQvjQ30AeQgZAHKfKxDSh9YAZxEyAOQ+VyCkD60BztZa7yKi+ft93iPiuu3qUkrzmyX9M+rfIenpCgMiRIDmjCDESVfoRogAzRlBiJOu0I0QAZozghAnXaEbIQI0ZwQhTrpCN0IEaM4IQpx0hW6ECNCcEYQ46QrdCBGgOSMIcdIVuhEiQHNGEOKkK3QjRIDmjCDESVfoRogAzRlBiJOu0I0QAZozghAnXaEbIQI0ZwQhTrpCN0IEaM4IQpx0hW6ECNCcEYQ46QrdCBGgOSMIcdIVuhEiQHNGEOKkK3QjRIDmjCDESVfoRogAzRlBiJOu0I0QAZozghAnXaEbIQI0ZwQhTrpCN0IEaM4IQpx0hW6ECNCcEYQ46QrdCBGgOSMIcdIVuhEiQHNGEOKkK3QjRIDmjCDESVfoRogAzRlBiJOu0I0QAZozghAnXaEbIQI0ZwQhTrpCN0IEaM4IQpx0hW6ECNCcEYQ46QrdCBGgOSPf+vpFZY95+H8AAAAASUVORK5CYII=",
+    "localVars": {
+        "plant_id": "A"
+    },
     "styleSheet": {},
     "linksRoute": "Angled",
     "layout": "",
-    "version": "1.25.0",
+    "version": "1.35.0",
     "nodeDataArray": [
         {
             "key": -50,
-            "size": "302 281",
+            "size": "302 280",
             "category": "General",
-            "bgBorderRadius": 10,
+            "bgBorderRadius": 4,
             "bgVisible": true,
             "bgColor": "#ffffff",
-            "pos": "644.5 456.78",
-            "bgBorderVisible": true
+            "pos": "644 456",
+            "bgBorderVisible": true,
+            "bgBorderColor": "#afafaf"
         },
         {
             "key": -38,
-            "size": "254 38",
+            "size": "250 38",
             "category": "General",
-            "bgBorderRadius": 10,
+            "bgBorderRadius": 4,
             "bgVisible": true,
             "bgColor": "#ffffff",
-            "pos": "132 152.67",
-            "bgBorderVisible": true
+            "pos": "135 150",
+            "bgBorderVisible": true,
+            "bgBorderColor": "#afafaf"
         },
         {
             "key": 14,
             "size": "522 113",
             "category": "General",
-            "bgBorderRadius": 10,
+            "bgBorderRadius": 4,
             "bgVisible": true,
             "bgColor": "#ffffff",
             "pos": "533.6 114.7",
-            "bgBorderVisible": true
-        },
-        {
-            "key": -5,
-            "size": "24 24",
-            "fixedAspect": true,
-            "category": "Image",
-            "imgVisible": true,
-            "imgSrc": "https://s3.amazonaws.com/rtviews3public/images/Lights/light_green_24.png",
-            "pos": "148.2 153"
-        },
-        {
-            "key": -6,
-            "size": "24 24",
-            "fixedAspect": true,
-            "category": "Image",
-            "imgVisible": true,
-            "imgSrc": "https://s3.amazonaws.com/rtviews3public/images/Lights/light_red_24.png",
-            "pos": "34.2 153"
+            "bgBorderVisible": true,
+            "bgBorderColor": "#afafaf"
         },
         {
             "key": -7,
@@ -80,10 +68,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 10pt sans-serif",
+            "labelFont": "normal bold 10pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
-            "pos": "87.2 153",
-            "labelColor": "#497ee7"
+            "pos": "88.2 153",
+            "labelColor": "#202f3f"
         },
         {
             "key": -8,
@@ -99,10 +87,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 10pt sans-serif",
+            "labelFont": "normal bold 10pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
-            "pos": "204.2 153",
-            "labelColor": "#497ee7"
+            "pos": "205.2 153",
+            "labelColor": "#202f3f"
         },
         {
             "key": 130,
@@ -138,7 +126,7 @@
                     "timeRange": -1,
                     "filter": {
                         "metric_name": "HeatingAirTemp",
-                        "plant_id": "$gplant_id"
+                        "plant_id": "$plant_id"
                     },
                     "type": "cache_advanced"
                 }
@@ -180,7 +168,7 @@
                     "timeRange": -1,
                     "filter": {
                         "metric_name": "DryingAirTemp",
-                        "plant_id": "$gplant_id"
+                        "plant_id": "$plant_id"
                     },
                     "type": "cache_advanced"
                 }
@@ -220,7 +208,7 @@
                     "timeRange": -1,
                     "filter": {
                         "metric_name": "CombustionAirTemp",
-                        "plant_id": "$gplant_id"
+                        "plant_id": "$plant_id"
                     },
                     "type": "cache_advanced"
                 }
@@ -260,7 +248,7 @@
                     "timeRange": -1,
                     "filter": {
                         "metric_name": "ExhaustAirTemp",
-                        "plant_id": "$gplant_id"
+                        "plant_id": "$plant_id"
                     },
                     "type": "cache_advanced"
                 }
@@ -274,7 +262,7 @@
             "fillFlag": true,
             "legendVisFlag": true,
             "legendPos": "right",
-            "scrollFlag": true,
+            "scrollFlag": false,
             "stripFlag": false,
             "pos": "642.6 394.56",
             "bindings": {
@@ -286,22 +274,27 @@
                     "timeRange": -1,
                     "filter": {
                         "metric_name": "bearing/bearing1/bearingrpm",
-                        "plant_id": "$gplant_id"
+                        "plant_id": "$plant_id"
                     },
                     "type": "cache_advanced"
                 }
             },
-            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png"
+            "imgSrc": "$assets/binders/images/default.png",
+            "bgBorderVisible": true,
+            "bgBorderColor": "#e0e0e0",
+            "bgBorderWidth": 1,
+            "bgBorderRadius": 0
         },
         {
             "key": -23,
-            "size": "216 281",
+            "size": "216 280",
             "category": "General",
-            "bgBorderRadius": 10,
+            "bgBorderRadius": 4,
             "bgVisible": true,
             "bgColor": "#ffffff",
-            "pos": "379.5 457.61",
-            "bgBorderVisible": true
+            "pos": "380 456",
+            "bgBorderVisible": true,
+            "bgBorderColor": "#afafaf"
         },
         {
             "key": -24,
@@ -311,7 +304,7 @@
             "fillFlag": true,
             "legendVisFlag": true,
             "legendPos": "right",
-            "scrollFlag": true,
+            "scrollFlag": false,
             "stripFlag": false,
             "pos": "642.5 534.56",
             "bindings": {
@@ -323,12 +316,16 @@
                     "timeRange": -1,
                     "filter": {
                         "metric_name": "bearing/bearing1/bearingtemperature",
-                        "plant_id": "$gplant_id"
+                        "plant_id": "$plant_id"
                     },
                     "type": "cache_advanced"
                 }
             },
-            "imgSrc": "/assets/3d7dc33223404ff91c716cb3b07fec5c.png"
+            "imgSrc": "$assets/binders/images/default.png",
+            "bgBorderVisible": true,
+            "bgBorderColor": "#e0e0e0",
+            "bgBorderWidth": 1,
+            "bgBorderRadius": 0
         },
         {
             "key": -25,
@@ -344,10 +341,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 10pt sans-serif",
+            "labelFont": "normal bold 10pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "384 337.56",
-            "labelColor": "#497ee7"
+            "labelColor": "#202f3f"
         },
         {
             "key": -26,
@@ -363,10 +360,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 10pt sans-serif",
+            "labelFont": "normal bold 10pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "548 327.33",
-            "labelColor": "#497ee7"
+            "labelColor": "#202f3f"
         },
         {
             "key": -27,
@@ -382,10 +379,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 10pt sans-serif",
+            "labelFont": "normal bold 10pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "579 467.67",
-            "labelColor": "#497ee7"
+            "labelColor": "#202f3f"
         },
         {
             "key": 150,
@@ -436,7 +433,7 @@
                     "timeRange": -1,
                     "filter": {
                         "metric_name": "bearing/bearing1/bearingrpm",
-                        "plant_id": "$gplant_id"
+                        "plant_id": "$plant_id"
                     },
                     "type": "cache_advanced"
                 }
@@ -456,10 +453,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 9pt sans-serif",
+            "labelFont": "normal bold 9pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "381 452",
-            "labelColor": "#497ee7"
+            "labelColor": "#202f3f"
         },
         {
             "key": -29,
@@ -510,7 +507,7 @@
                     "timeRange": -1,
                     "filter": {
                         "metric_name": "bearing/bearing1/bearingtemperature",
-                        "plant_id": "$gplant_id"
+                        "plant_id": "$plant_id"
                     },
                     "type": "cache_advanced"
                 }
@@ -530,10 +527,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 9pt sans-serif",
+            "labelFont": "normal bold 9pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "381 574.22",
-            "labelColor": "#497ee7"
+            "labelColor": "#202f3f"
         },
         {
             "key": -31,
@@ -549,10 +546,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 10pt sans-serif",
+            "labelFont": "normal bold 10pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "480 183",
-            "labelColor": "#497ee7"
+            "labelColor": "#202f3f"
         },
         {
             "key": -32,
@@ -568,20 +565,21 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 10pt sans-serif",
+            "labelFont": "normal bold 10pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "460 46",
-            "labelColor": "#497ee7"
+            "labelColor": "#202f3f"
         },
         {
             "key": -33,
             "size": "523 118",
             "category": "General",
-            "bgBorderRadius": 10,
+            "bgBorderRadius": 4,
             "bgVisible": true,
             "bgColor": "#ffffff",
             "pos": "533.5 253.33",
-            "bgBorderVisible": true
+            "bgBorderVisible": true,
+            "bgBorderColor": "#afafaf"
         },
         {
             "key": -34,
@@ -617,7 +615,7 @@
                     "timeRange": -1,
                     "filter": {
                         "metric_name": "HeatingAggregateTemp",
-                        "plant_id": "$gplant_id"
+                        "plant_id": "$plant_id"
                     },
                     "type": "cache_advanced"
                 }
@@ -658,7 +656,7 @@
                     "timeRange": -1,
                     "filter": {
                         "metric_name": "DryingAggregateTemp",
-                        "plant_id": "$gplant_id"
+                        "plant_id": "$plant_id"
                     },
                     "type": "cache_advanced"
                 }
@@ -699,7 +697,7 @@
                     "timeRange": -1,
                     "filter": {
                         "metric_name": "EntryAggregateTemp",
-                        "plant_id": "$gplant_id"
+                        "plant_id": "$plant_id"
                     },
                     "type": "cache_advanced"
                 }
@@ -740,7 +738,7 @@
                     "timeRange": -1,
                     "filter": {
                         "metric_name": "ExitAggregateTemp",
-                        "plant_id": "$gplant_id"
+                        "plant_id": "$plant_id"
                     },
                     "type": "cache_advanced"
                 }
@@ -751,11 +749,12 @@
             "key": -39,
             "size": "188 31",
             "category": "General",
-            "bgBorderRadius": 10,
+            "bgBorderRadius": 4,
             "bgVisible": true,
-            "bgColor": "#a9ffaa",
+            "bgColor": "#7bc97d",
             "pos": "131.5 85.33",
-            "bgBorderVisible": true
+            "bgBorderVisible": true,
+            "bgBorderColor": "#afafaf"
         },
         {
             "key": -40,
@@ -771,10 +770,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 12pt sans-serif",
+            "labelFont": "normal bold 12pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "89 86",
-            "labelColor": "#000000"
+            "labelColor": "#202f3f"
         },
         {
             "key": -41,
@@ -824,10 +823,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 7pt sans-serif",
+            "labelFont": "normal bold 7pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "355 163",
-            "labelColor": "#497ee7"
+            "labelColor": "#202f3f"
         },
         {
             "key": -43,
@@ -843,10 +842,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 7pt sans-serif",
+            "labelFont": "normal bold 7pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "469 163",
-            "labelColor": "#497ee7"
+            "labelColor": "#202f3f"
         },
         {
             "key": -44,
@@ -862,10 +861,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 7pt sans-serif",
+            "labelFont": "normal bold 7pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "585 163",
-            "labelColor": "#497ee7"
+            "labelColor": "#202f3f"
         },
         {
             "key": -45,
@@ -881,10 +880,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 7pt sans-serif",
+            "labelFont": "normal bold 7pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "703.38 163",
-            "labelColor": "#497ee7"
+            "labelColor": "#202f3f"
         },
         {
             "key": -46,
@@ -900,10 +899,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 7pt sans-serif",
+            "labelFont": "normal bold 7pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "343.62 301.34",
-            "labelColor": "#497ee7"
+            "labelColor": "#202f3f"
         },
         {
             "key": -47,
@@ -919,10 +918,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 7pt sans-serif",
+            "labelFont": "normal bold 7pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "473.62 301.34",
-            "labelColor": "#497ee7"
+            "labelColor": "#202f3f"
         },
         {
             "key": -48,
@@ -938,10 +937,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 7pt sans-serif",
+            "labelFont": "normal bold 7pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "597.62 301.34",
-            "labelColor": "#497ee7"
+            "labelColor": "#202f3f"
         },
         {
             "key": -49,
@@ -957,10 +956,10 @@
                 "vertical": "Center"
             },
             "valueVisible": false,
-            "labelFont": "normal bold 7pt sans-serif",
+            "labelFont": "normal bold 7pt external:\"Open Sans\"",
             "valueFont": "normal normal 12pt sans-serif",
             "pos": "715 301.34",
-            "labelColor": "#497ee7"
+            "labelColor": "#202f3f"
         },
         {
             "key": 19,
@@ -970,12 +969,21 @@
             "server": "CLEARBLADE-IOT-SERVER",
             "cache": "ClearBladeCache",
             "autoSelect": true,
-            "setGlobals": true,
+            "setGlobals": false,
             "indexColumns": "plant_id",
             "bgVis": false,
             "pos": "670 30",
             "dispName": "cachectrl2",
-            "serverURL": "http://localhost:3270/rtvquery"
+            "serverURL": "http://sl-iot-server-3.slsandbox.com/clearblade_rtvquery",
+            "miscProps": {
+                "columns": {
+                    "plant_id": {
+                        "title": "Plant ID",
+                        "varToSet": "plant_id"
+                    }
+                }
+            },
+            "script": ""
         },
         {
             "key": 11,
@@ -996,28 +1004,28 @@
                     {
                         "value": "A",
                         "comp": "=",
-                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/fae92bc5-249d-419a-9964-d91e650b5ef8/plant_san_francisco.jpg"
+                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/4e5e0238-d06d-4387-8350-012ee983e624/plant_san_francisco.jpg"
                     },
                     {
                         "value": "B",
                         "comp": "=",
-                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/545e4267-3e3b-465d-8067-7604d4be22a4/plant_seattle.jpg"
+                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/21ac468c-c060-4c07-93ef-62d3b391653d/plant_seattle.jpg"
                     },
                     {
                         "value": "C",
                         "comp": "=",
-                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/bb9f4542-11c3-4cd6-82e9-50083c393fbb/plant_chicago.jpg"
+                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/e36331d9-9b56-4127-8f18-6c5fd9f26e0c/plant_chicago.jpg"
                     }
                 ]
             },
-            "pos": "130 280",
+            "pos": "133 280",
             "labelVisible": false,
             "bgVisible": true,
             "bgBorderWidth": 0.5,
             "bgBorderRadius": 5,
             "bindings": {
                 "valueText": {
-                    "name": "gplant_id",
+                    "name": "plant_id",
                     "type": "variable"
                 }
             }
@@ -1041,28 +1049,28 @@
                     {
                         "value": "A",
                         "comp": "=",
-                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/ca619007-c3af-48e3-aa96-145426861aa6/san_francisco_map.jpg"
+                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/568c26cd-86c1-4940-817c-05be2ad763fa/san_francisco_map.jpg"
                     },
                     {
                         "value": "B",
                         "comp": "=",
-                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/430f02d0-4f56-43da-8ac3-792c72daee08/seattle_map.jpg"
+                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/5cf1007f-1bcb-4d6a-bef1-2325f44c244b/seattle_map.jpg"
                     },
                     {
                         "value": "C",
                         "comp": "=",
-                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/1997bc88-2b6c-4df7-8346-1be87839486f/chicago_map.jpg"
+                        "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/c8b141be-128b-47c5-b177-b71339126cc6/chicago_map.jpg"
                     }
                 ]
             },
-            "pos": "130 490",
+            "pos": "133 490",
             "labelVisible": false,
             "bgVisible": true,
             "bgBorderWidth": 0.5,
             "bgBorderRadius": 5,
             "bindings": {
                 "valueText": {
-                    "name": "gplant_id",
+                    "name": "plant_id",
                     "type": "variable"
                 }
             }
@@ -1106,12 +1114,34 @@
             "bgBorderRadius": 5,
             "bindings": {
                 "valueText": {
-                    "name": "gplant_id",
+                    "name": "plant_id",
                     "type": "variable"
                 }
             },
-            "labelFont": "normal bold 14pt sans-serif",
-            "labelColor": "#497ee7"
+            "labelFont": "normal bold 14pt external:\"Open Sans\"",
+            "labelColor": "#0b83b3"
+        },
+        {
+            "key": 16,
+            "size": "22 22",
+            "category": "General",
+            "figure": "Ellipse",
+            "fixedAspect": true,
+            "bgVisible": true,
+            "bgColor": "#e87474",
+            "pos": "34 150",
+            "bgBorderVisible": false
+        },
+        {
+            "key": -53,
+            "size": "22 22",
+            "category": "General",
+            "figure": "Ellipse",
+            "fixedAspect": true,
+            "bgVisible": true,
+            "bgColor": "#7bc97d",
+            "pos": "146 150",
+            "bgBorderVisible": false
         }
     ],
     "linkDataArray": []

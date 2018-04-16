@@ -1,0 +1,287 @@
+{
+    "modifiedDate": "2018-04-16T16:16:44.154Z",
+    "viewport": {
+        "x": 0,
+        "y": 0,
+        "scale": 1
+    },
+    "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 280,
+        "height": 150,
+        "resizable": false,
+        "margin": 10
+    },
+    "preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAACRElEQVR4Xu2TsckUYRgG//uyxQMDG7AES9AuzKzL8K9ES7AEOzDwYJPlTgwFYZJleA/m4oedl5n7Li/9Rhm4jLqmY14KMuxPUJCCDDMw7JxeSEGGGRh2Ti+kIMMMDDunF1KQYQaGndMLKcgwA8PO6YUUZJiBYef0QgoyzMCwc3ohBRlmYNg5vZCCDDMw7JxeSEGGGRh2Ti+kIMMMDDunF1KQYQaGndMLKcg5BvZ9f3+/37/872trrddt236eQ3K/8rQvZN/3j2utb391Hcfxj7W11qdt2767Ks+hFeQcj6d95WmD3G63D2utr5fL5c3j8fi91np7v99/rbXeHcfx+Xq9/jjNkvihpw0iOlJRBVF1M6wg7EhdFETVzbCCsCN1URBVN8MKwo7URUFU3QwrCDtSFwVRdTOsIOxIXRRE1c2wgrAjdVEQVTfDCsKO1EVBVN0MKwg7UhcFUXUzrCDsSF0URNXNsIKwI3VREFU3wwrCjtRFQVTdDCsIO1IXBVF1M6wg7EhdFETVzbCCsCN1URBVN8MKwo7URUFU3QwrCDtSFwVRdTOsIOxIXRRE1c2wgrAjdVEQVTfDCsKO1EVBVN0MKwg7UhcFUXUzrCDsSF0URNXNsIKwI3VREFU3wwrCjtRFQVTdDCsIO1IXBVF1M6wg7EhdFETVzbCCsCN1URBVN8MKwo7URUFU3QwrCDtSFwVRdTOsIOxIXRRE1c2wgrAjdVEQVTfDCsKO1EVBVN0MKwg7UhcFUXUzrCDsSF0URNXNsD8HnihlIYHcOgAAAABJRU5ErkJggg==",
+    "localVars": {
+        "plant_id": "A",
+        "plant_name": "San Francisco"
+    },
+    "styleSheet": {},
+    "linksRoute": "Angled",
+    "portsLayout": "Edge",
+    "layout": "",
+    "version": "1.35.0",
+    "nodeDataArray": [
+        {
+            "key": -10,
+            "size": "276 146",
+            "category": "General",
+            "bgBorderRadius": 0,
+            "bgVisible": true,
+            "bgColor": "#f5f5f5",
+            "pos": "140 74",
+            "bgBorderVisible": true,
+            "bgBorderColor": "#7a7a7a"
+        },
+        {
+            "key": 21,
+            "size": "40 70",
+            "fixedAspect": true,
+            "category": "Image",
+            "imgVisible": true,
+            "imgSrc": "https://rtviews3production.s3-us-west-1.amazonaws.com/c1dc9477-5ba8-5e17-3ec3-71c98e195b19/Clearblade/dd37c589-1672-4c9f-afa0-e7f00cb3b462/Thermometer.jpg",
+            "pos": "50 66",
+            "bgBorderVisible": false,
+            "bgBorderRadius": 0,
+            "scaleImage": false
+        },
+        {
+            "key": 5,
+            "size": "40 20",
+            "figure": "Rectangle",
+            "category": "General",
+            "bgColor": "#fcfcfc",
+            "bgVisible": true,
+            "bgBorderColor": "#bcbcbc",
+            "bgBorderVisible": true,
+            "labelVisible": true,
+            "labelText": "EAT",
+            "labelAlignment": {
+                "horizontal": "Left",
+                "vertical": "Center"
+            },
+            "valueVisible": true,
+            "valueFormat": "#,###",
+            "valueAlignment": {
+                "horizontal": "InsideLeft",
+                "vertical": "Center"
+            },
+            "pos": "60 130",
+            "bindings": {
+                "valueText": {
+                    "cache": "ClearBladeCache",
+                    "value": "measurement",
+                    "url": "CLEARBLADE-IOT-SERVER",
+                    "table": "current",
+                    "filter": {
+                        "Connection": "$router_name",
+                        "plant_name": "MixingPlant",
+                        "plant_id": "$plant_id",
+                        "metric_name": "EntryAggregateTemp"
+                    },
+                    "type": "cache"
+                }
+            },
+            "labelFont": "normal normal 8pt Arial, Helvetica Neue, Helvetica, sans-serif",
+            "valueFont": "normal normal 9pt Arial, Helvetica Neue, Helvetica, sans-serif",
+            "labelColor": "#202f3f",
+            "valueColor": "#202f3f"
+        },
+        {
+            "key": -4,
+            "size": "40 20",
+            "figure": "Rectangle",
+            "category": "General",
+            "bgColor": "#fcfcfc",
+            "bgVisible": true,
+            "bgBorderColor": "#bcbcbc",
+            "bgBorderVisible": true,
+            "labelVisible": true,
+            "labelText": "DAT",
+            "labelAlignment": {
+                "horizontal": "Left",
+                "vertical": "Center"
+            },
+            "valueVisible": true,
+            "valueFormat": "#,###",
+            "valueAlignment": {
+                "horizontal": "InsideLeft",
+                "vertical": "Center"
+            },
+            "pos": "150 130",
+            "bindings": {
+                "valueText": {
+                    "cache": "ClearBladeCache",
+                    "value": "measurement",
+                    "url": "CLEARBLADE-IOT-SERVER",
+                    "table": "current",
+                    "filter": {
+                        "Connection": "$router_name",
+                        "plant_name": "MixingPlant",
+                        "plant_id": "$plant_id",
+                        "metric_name": "DryingAggregateTemp"
+                    },
+                    "type": "cache"
+                }
+            },
+            "labelFont": "normal normal 8pt Arial, Helvetica Neue, Helvetica, sans-serif",
+            "valueFont": "normal normal 9pt Arial, Helvetica Neue, Helvetica, sans-serif",
+            "valueColor": "#202f3f"
+        },
+        {
+            "key": -5,
+            "size": "80 24",
+            "figure": "Rectangle",
+            "category": "GeneralText",
+            "bgVisible": false,
+            "bgBorderVisible": false,
+            "labelVisible": true,
+            "labelAlignment": {
+                "horizontal": "Center",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "labelFont": "italic bold 9pt external:\"Open Sans\"",
+            "valueFont": "normal normal 12pt sans-serif",
+            "pos": "50 20",
+            "bindings": {
+                "labelText": {
+                    "name": "plant_name",
+                    "type": "variable"
+                }
+            },
+            "labelColor": "#202f3f"
+        },
+        {
+            "key": 12,
+            "category": "extern-metric",
+            "size": "140 50",
+            "dispName": "metric_spark",
+            "figure": "Rectangle",
+            "bgBorderVisible": false,
+            "miscProps": {
+                "bgVisFlag": true,
+                "bgType": "discreteColors",
+                "bgColors": "Bg;Bg2;Bg",
+                "traceColor": "FgHi",
+                "traceWidth": "0.667",
+                "axisVisFlag": true,
+                "axisLineVisFlag": true,
+                "axisLineColor": "FgHi",
+                "axisLineWidth": "0.667",
+                "axisLabelVisFlag": true,
+                "axisTextColor": "FgHi"
+            },
+            "pos": "190 40",
+            "labelAlignment": {
+                "horizontal": "Left",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "bindings": {
+                "valueText": {
+                    "url": "CLEARBLADE-IOT-SERVER",
+                    "cache": "ClearBladeCache",
+                    "table": "history",
+                    "value": "time_stamp;measurement",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "EntryAggregateTemp",
+                        "plant_id": "$plant_id"
+                    },
+                    "type": "cache_advanced"
+                }
+            },
+            "labelText": "Entry",
+            "labelColor": "#202f3f"
+        },
+        {
+            "key": -8,
+            "category": "extern-metric",
+            "size": "140 50",
+            "dispName": "metric_spark",
+            "figure": "Rectangle",
+            "bgBorderVisible": false,
+            "miscProps": {
+                "bgVisFlag": true,
+                "bgType": "discreteColors",
+                "bgColors": "Bg;Bg2;Bg",
+                "traceColor": "FgHi",
+                "traceWidth": "0.667",
+                "axisVisFlag": true,
+                "axisLineVisFlag": true,
+                "axisLineColor": "FgHi",
+                "axisLineWidth": "0.667",
+                "axisLabelVisFlag": true,
+                "axisTextColor": "FgHi"
+            },
+            "pos": "190 90",
+            "labelAlignment": {
+                "horizontal": "Left",
+                "vertical": "Center"
+            },
+            "valueVisible": false,
+            "bindings": {
+                "valueText": {
+                    "url": "CLEARBLADE-IOT-SERVER",
+                    "cache": "ClearBladeCache",
+                    "table": "history",
+                    "value": "time_stamp;measurement",
+                    "timeRange": -1,
+                    "filter": {
+                        "metric_name": "ExitAggregateTemp",
+                        "plant_id": "$plant_id"
+                    },
+                    "type": "cache_advanced"
+                }
+            },
+            "labelText": "Exit",
+            "labelColor": "#202f3f"
+        },
+        {
+            "key": -9,
+            "size": "40 20",
+            "figure": "Rectangle",
+            "category": "General",
+            "bgColor": "#fcfcfc",
+            "bgVisible": true,
+            "bgBorderColor": "#bcbcbc",
+            "bgBorderVisible": true,
+            "labelVisible": true,
+            "labelText": "HAT",
+            "labelAlignment": {
+                "horizontal": "Left",
+                "vertical": "Center"
+            },
+            "valueVisible": true,
+            "valueFormat": "#,###",
+            "valueAlignment": {
+                "horizontal": "InsideLeft",
+                "vertical": "Center"
+            },
+            "pos": "240 130",
+            "bindings": {
+                "valueText": {
+                    "cache": "ClearBladeCache",
+                    "value": "measurement",
+                    "url": "CLEARBLADE-IOT-SERVER",
+                    "table": "current",
+                    "filter": {
+                        "Connection": "$router_name",
+                        "plant_name": "MixingPlant",
+                        "plant_id": "$plant_id",
+                        "metric_name": "HeatingAggregateTemp"
+                    },
+                    "type": "cache"
+                }
+            },
+            "labelFont": "normal normal 8pt Arial, Helvetica Neue, Helvetica, sans-serif",
+            "valueFont": "normal normal 9pt Arial, Helvetica Neue, Helvetica, sans-serif",
+            "labelColor": "#202f3f",
+            "valueColor": "#202f3f"
+        }
+    ],
+    "linkDataArray": []
+}
