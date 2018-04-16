@@ -31,9 +31,11 @@ var attempts = 0;
 var error_count = 0;
 var start = new Date().getTime();
 
-// Assign RTView Target URL
+// Assign RTView Target URLs
 function set_targeturl (url) {
     targetURL = url;
+    targetPostStr = targetURL + '/rtview/json/data/';
+    targetCommandStr = targetURL + '/rtview/json/cache_processor/';
 }
 // Set Batch Size
 function set_batchsize (size) {

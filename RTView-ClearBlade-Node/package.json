@@ -1,0 +1,24 @@
+{
+  "name": "rtview_clearblade_feed",
+  "version": "1.0.0",
+  "description": "Node client that subscribes to ClearBlade demo data and pushes it to RTView Data Server",
+  "keywords": [
+    "real-time",
+    "clearblade",
+    "rtview"
+  ],
+  "homepage": "http://www.sl.com",
+  "main": "rtview_clearblade_feed.js",
+  "scripts": {
+    "start": "node rtview_clearblade_feed.js"
+  },
+  "engines": [
+    "node"
+  ],
+  "dependencies": {
+    "clearblade": "",
+    "constants": "",
+    "request": "",
+    "util": ""
+  }
+}
