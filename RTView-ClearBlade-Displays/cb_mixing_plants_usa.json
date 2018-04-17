@@ -1,5 +1,5 @@
 {
-    "modifiedDate": "2018-04-16T16:19:54.274Z",
+    "modifiedDate": "2018-04-17T22:59:49.238Z",
     "viewport": {
         "x": 0,
         "y": 0,
@@ -39,7 +39,7 @@
             "bgBorderVisible": true,
             "labelVisible": false,
             "valueVisible": true,
-            "valueText": "ClearBlade Platform provides IoT data for Mixing Plants from different locations in the USA. In this display, you could double click the object that shows the plant_id value for San Francisco, Seattle and Chicago and the navigation will take you to another display. In the drill down display, the live temperature and RPM data from active pumps for the plant you chose are being shown. ",
+            "valueText": "ClearBlade Platform provides IoT data for Mixing Plants from different locations in the USA. \nIn this display, you could click the object that shows the Plant ID for San Francisco, \nSeattle and Chicago and the navigation will take you to another display. In the drilldown display, \nthe live temperature and RPM data from active pumps for the plant you choose will be shown.",
             "valueWrap": true,
             "labelAlignment": {
                 "horizontal": "Center",
