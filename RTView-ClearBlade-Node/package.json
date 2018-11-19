@@ -1,6 +1,6 @@
 {
   "name": "rtview_clearblade_feed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node client that subscribes to ClearBlade demo data and pushes it to RTView Data Server",
   "keywords": [
     "real-time",
@@ -19,6 +19,7 @@
     "clearblade": "",
     "constants": "",
     "request": "",
-    "util": ""
+    "util": "",
+    "rtview-utils": ""
   }
 }
