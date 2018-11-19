@@ -5,7 +5,7 @@ const ClearBlade = require("clearblade");
 const constants = require("./constants.json");
 
 // The rtview-utils package contains the API for communicating with RTView DataServer
-var rtview_utils = require("rtview-utils");
+var rtview = require('rtview-utils')();
 
 // Default target URL
 var target_url = "http://localhost:3275";            // this is the default
@@ -17,7 +17,6 @@ function isValidStr(str) {
         (typeof str != "undefined") &&
         (typeof str.valueOf() == "string") &&
         (str.length > 0) && (str.trim().length > 0));
-
 }
 
 // set target_url var using Environment variable "TARGET_URL" if set 
@@ -31,7 +30,7 @@ if (process.argv.length >=2 && isValidStr(process.argv[2])) {
 }
 
 // Set target URL to post data to
-rtview_utils.set_targeturl(target_url);         
+rtview.set_targeturl(target_url);         
 
 // Name of the RTView cache created in this demo
 var cacheName = 'ClearBladeCache';
@@ -111,7 +110,7 @@ function message_create_and_send (message, count) {
     data.measurement=obj.measurement;
     data.unit=obj.unit;
     console.log('... sending: ' + JSON.stringify(data));
-    rtview_utils.send_datatable(cacheName, data);
+    rtview.send_datatable(cacheName, data);
     
     // Simulate data for Plant B
     data = {};
@@ -121,7 +120,7 @@ function message_create_and_send (message, count) {
     data.measurement=obj.measurement + randomIntInc(-50,50);
     data.unit=obj.unit;
     console.log('... sending: ' + JSON.stringify(data));
-    rtview_utils.send_datatable(cacheName, data);
+    rtview.send_datatable(cacheName, data);
     
     // Simulate data for Plant C
     data = {};
@@ -131,7 +130,7 @@ function message_create_and_send (message, count) {
     data.measurement=obj.measurement + randomIntInc(-50,50);
     data.unit=obj.unit;
     console.log('... sending: ' + JSON.stringify(data));
-    rtview_utils.send_datatable(cacheName, data);    
+    rtview.send_datatable(cacheName, data);    
 }
 
 function randomIntInc (low, high) {
@@ -141,7 +140,7 @@ function randomIntInc (low, high) {
 // Specific cache definition for sample data table
 // Note: This is only called once on startup. 
 // If data server is not running, cache will not be created correctly.
-rtview_utils.create_datacache(cacheName,
+rtview.create_datacache(cacheName,
 {   // cache properties
     "indexColumnNames": "plant_name;plant_id;metric_name",
     "historyColumnNames": "measurement;unit"
