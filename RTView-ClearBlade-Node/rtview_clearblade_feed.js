@@ -4,7 +4,8 @@
 const ClearBlade = require("clearblade");
 const constants = require("./constants.json");
 
-var rtview_utils = require('./rtview_utils.js');
+// The rtview-utils package contains the API for communicating with RTView DataServer
+var rtview_utils = require("rtview-utils");
 
 // Default target URL
 var target_url = "http://localhost:3275";            // this is the default
